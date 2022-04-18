@@ -15,6 +15,8 @@ public class UIMenu : MonoBehaviour
     public TextBox textTotalLose;
     public TextBox textScore;
 
+    public GameObject pvpPanel;
+
     void Start()
     {
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
@@ -66,5 +68,12 @@ public class UIMenu : MonoBehaviour
     void OnPopupCategoryCallback(bool _confirm)
     {
 
+    }
+
+    public void onClickPvp()
+    {
+        
+        pvpPanel.SetActive(true);
+        FetchStats();
     }
 }
