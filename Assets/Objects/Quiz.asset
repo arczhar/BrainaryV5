@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c0e7ff514384e4fb689024cbf8359d, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  Topic: AAAA
+  Icon: {fileID: 0}
+  AnswerTime: 10
+  WaitNextQuestion: 1
+  Questions:
+  - Text: "Hampir semua kegiatan dalam hidup manusia memiliki hubungan erat dengan
+      kehidupan manusia lain, karena itulah manusia disebut\u2026"
+    Choices:
+    - Text: Makhluk lemah
+      Answer: 0
+    - Text: Makhluk ekonomi
+      Answer: 0
+    - Text: Makhluk sosial
+      Answer: 1
+    - Text: Makhluk individu
+      Answer: 0
+    Expanding: 1

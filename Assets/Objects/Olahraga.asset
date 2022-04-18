@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c0e7ff514384e4fb689024cbf8359d, type: 3}
+  m_Name: Olahraga
+  m_EditorClassIdentifier: 
+  Topic: OLAH RAGA
+  Icon: {fileID: 21300000, guid: dc78533f7bc3b2247a305d51b3e1360d, type: 3}
+  AnswerTime: 10
+  WaitNextQuestion: 1
+  Questions:
+  - Text: "Dalam permainan sepak bola terdapat berapa babak\u2026"
+    Choices:
+    - Text: Satu
+      Answer: 0
+    - Text: Dua
+      Answer: 1
+    - Text: Tiga
+      Answer: 0
+    - Text: Empat
+      Answer: 0
+    Expanding: 0
+  - Text: "Saat bermain sepak bola, bagian tubuh mana yang tidak boleh dipakai selain
+      kiper \u2026"
+    Choices:
+    - Text: Kepala
+      Answer: 0
+    - Text: Dada
+      Answer: 0
+    - Text: Tangan
+      Answer: 0
+    - Text: Kaki
+      Answer: 1
+    Expanding: 0
+  - Text: "Berikut ini adalah teknik dasar dalam pertandingan sepak bola, kecuali\u2026"
+    Choices:
+    - Text: Tendang bola dengan kaki bagian dalam Anda
+      Answer: 0
+    - Text: Tendang bola dengan kaki luar
+      Answer: 0
+    - Text: Tendang bola dengan punggung kaki Anda
+      Answer: 0
+    - Text: Pegang bola dengan tangan Anda
+      Answer: 1
+    Expanding: 0
+  - Text: "Teknik mengoper bola jarak dekat harus menggunakan kaki bagian\u2026"
+    Choices:
+    - Text: Dalam
+      Answer: 1
+    - Text: Luar
+      Answer: 0
+    - Text: Punggung kaki
+      Answer: 0
+    - Text: Punggung kaki bagian dalam
+      Answer: 0
+    Expanding: 0
+  - Text: "Kaki terayun dari belakang. Saat bola datang, jari kaki atau sepatu menunjuk
+      ke lantai. Dan sebaiknya menggunakan kaki bagian\u2026"
+    Choices:
+    - Text: Dalam kaki
+      Answer: 0
+    - Text: Luar kaki
+      Answer: 0
+    - Text: Punggung kaki
+      Answer: 0
+    - Text: Telapak kaki
+      Answer: 1
+    Expanding: 0

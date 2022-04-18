@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4758433577005291743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4758433577005291740}
+  - component: {fileID: 4758433577005291741}
+  m_Layer: 0
+  m_Name: GlobalVariable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4758433577005291740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758433577005291743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4758433577005291741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758433577005291743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d759337ea7694aa3a38615cbd9cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPersistant: 1
+  ExpandingAvatar: 1
+  Avatars:
+  - Expanding: 0
+    AvatarId: 0
+    AvatarImage: {fileID: -7898670983504509472, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  - Expanding: 0
+    AvatarId: 1
+    AvatarImage: {fileID: -8129995080149776113, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  - Expanding: 0
+    AvatarId: 2
+    AvatarImage: {fileID: -4556204826488232844, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  - Expanding: 0
+    AvatarId: 3
+    AvatarImage: {fileID: 7237214118930686135, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  - Expanding: 0
+    AvatarId: 4
+    AvatarImage: {fileID: -2661456039359935196, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  - Expanding: 0
+    AvatarId: 5
+    AvatarImage: {fileID: -7543299162069311748, guid: 3a14679efe7b54542a2b35a38d799360,
+      type: 3}
+    AvatarSelection: 0
+  ExpandingQuiz: 1
+  Quizzes:
+  - {fileID: 11400000, guid: 80509e98e51decd409fc9c591ffae8ab, type: 2}
+  - {fileID: 11400000, guid: 6d2b5578862a84140831a76856bc1fcf, type: 2}
+  - {fileID: 11400000, guid: 8db2182cc309dc84891b69b753bf693a, type: 2}
+  - {fileID: 11400000, guid: d64ccf6d02c70f544aa0dba653acfa64, type: 2}
