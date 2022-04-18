@@ -7,7 +7,7 @@ using System.Linq;
 
 public class UIMenu : MonoBehaviour
 {
-    public TextBox AvatarName;
+    public Text AvatarName;
     public Image AvatarImage;
 
     public TextBox textTotalWar;
