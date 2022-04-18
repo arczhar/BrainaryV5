@@ -9941,7 +9941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1204554415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13906,7 +13906,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 600838092}
-        m_MethodName: ChooseCategory
+        m_MethodName: OnClickAvatar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17895,6 +17895,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Quizzes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[5].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[4].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[3].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[0].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[0].AvatarImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 985638bc9fcb86148809249ec998bede,
+        type: 3}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[1].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[1].AvatarImage
+      value: 
+      objectReference: {fileID: 21300000, guid: a8f32f6570036dc4193cb50741b61070,
+        type: 3}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[2].Expanding
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[2].AvatarImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 226153be3ab657a4da6bb9eb27c4c460,
+        type: 3}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Avatars.Array.data[3].AvatarImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 45df2edff57f9824192559b7e0e29f1b,
+        type: 3}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: ExpandingAvatar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758433577005291741, guid: 8e06fb274e3fa444b9bcc30744a09789,
+        type: 3}
+      propertyPath: Quizzes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d64ccf6d02c70f544aa0dba653acfa64,
+        type: 2}
     - target: {fileID: 4758433577005291743, guid: 8e06fb274e3fa444b9bcc30744a09789,
         type: 3}
       propertyPath: m_Name

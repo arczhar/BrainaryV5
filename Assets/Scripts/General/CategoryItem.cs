@@ -7,9 +7,10 @@ public class CategoryItem : MonoBehaviour
 {
     public Color colorDefault;
     public Color colorSelected;
+    public GameObject Img;
 
     public Image Icon;
-    public TextBox Topic;
+    //public TextBox Topic;
     private Image selector;
 
     private Quiz Quiz;
@@ -25,22 +26,24 @@ public class CategoryItem : MonoBehaviour
         Quiz = _quiz;
 
         Icon.sprite = Quiz.Icon;
-        Topic.text = Quiz.Topic;
+        //Topic.text = Quiz.Topic;
     }
 
     public void OnClickSelect()
     {
+
         foreach (Transform t in transform.parent)
         {
             t.GetComponent<CategoryItem>().Reset();
         }
 
-        selector.color = colorSelected;
+        Img.SetActive(true);
         NetworkIO.instance.ServerOptions.Quiz = Quiz;
     }
 
     public void Reset()
     {
-        selector.color = colorDefault;
+        Img.SetActive(false);
+        //selector.color = colorDefault;
     }
 }

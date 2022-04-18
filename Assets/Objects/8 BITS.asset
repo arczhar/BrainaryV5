@@ -1,0 +1,3341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c0e7ff514384e4fb689024cbf8359d, type: 3}
+  m_Name: 8 BITS
+  m_EditorClassIdentifier: 
+  Topic: 8 BITS
+  Icon: {fileID: 21300000, guid: 7a62781757a286946a3a2700bac03cfd, type: 3}
+  AnswerTime: 10
+  WaitNextQuestion: 1
+  Questions:
+  - Text: 0
+    Choices:
+    - Text: 00011001
+      Answer: 0
+    - Text: 10111101
+      Answer: 0
+    - Text: 00000000
+      Answer: 1
+    - Text: 00111011
+      Answer: 0
+    Expanding: 0
+  - Text: 1
+    Choices:
+    - Text: 00000001
+      Answer: 1
+    - Text: 01100010
+      Answer: 0
+    - Text: 01100110
+      Answer: 0
+    - Text: 11110001
+      Answer: 0
+    Expanding: 0
+  - Text: 2
+    Choices:
+    - Text: 00010100
+      Answer: 0
+    - Text: 11100110
+      Answer: 0
+    - Text: 00111100
+      Answer: 0
+    - Text: 00000010
+      Answer: 1
+    Expanding: 0
+  - Text: 3
+    Choices:
+    - Text: 11011001
+      Answer: 0
+    - Text: 00000011
+      Answer: 1
+    - Text: 11100101
+      Answer: 0
+    - Text: 01010111
+      Answer: 0
+    Expanding: 0
+  - Text: 4
+    Choices:
+    - Text: 10000001
+      Answer: 0
+    - Text: 10101001
+      Answer: 0
+    - Text: 00000100
+      Answer: 1
+    - Text: 10000011
+      Answer: 0
+    Expanding: 0
+  - Text: 5
+    Choices:
+    - Text: 01110011
+      Answer: 0
+    - Text: 11100010
+      Answer: 0
+    - Text: 10011110
+      Answer: 0
+    - Text: 00000101
+      Answer: 1
+    Expanding: 0
+  - Text: 6
+    Choices:
+    - Text: 00000110
+      Answer: 1
+    - Text: 11010100
+      Answer: 0
+    - Text: 11010100
+      Answer: 0
+    - Text: 01101010
+      Answer: 0
+    Expanding: 0
+  - Text: 7
+    Choices:
+    - Text: 10001001
+      Answer: 0
+    - Text: 00100101
+      Answer: 0
+    - Text: 01111110
+      Answer: 0
+    - Text: 00000111
+      Answer: 1
+    Expanding: 0
+  - Text: 8
+    Choices:
+    - Text: 11110010
+      Answer: 0
+    - Text: 11110111
+      Answer: 0
+    - Text: 11000011
+      Answer: 0
+    - Text: 00001000
+      Answer: 1
+    Expanding: 0
+  - Text: 9
+    Choices:
+    - Text: 10001011
+      Answer: 0
+    - Text: 00101011
+      Answer: 0
+    - Text: 00000010
+      Answer: 0
+    - Text: 00001001
+      Answer: 1
+    Expanding: 0
+  - Text: 10
+    Choices:
+    - Text: 11010111
+      Answer: 0
+    - Text: 11100111
+      Answer: 0
+    - Text: 11111101
+      Answer: 0
+    - Text: 00001010
+      Answer: 1
+    Expanding: 0
+  - Text: 11
+    Choices:
+    - Text: 01000101
+      Answer: 0
+    - Text: 00100100
+      Answer: 0
+    - Text: 10101000
+      Answer: 0
+    - Text: 00001011
+      Answer: 1
+    Expanding: 0
+  - Text: 12
+    Choices:
+    - Text: 10100010
+      Answer: 0
+    - Text: 00001011
+      Answer: 0
+    - Text: 11001010
+      Answer: 0
+    - Text: 00001100
+      Answer: 1
+    Expanding: 0
+  - Text: 13
+    Choices:
+    - Text: 00001101
+      Answer: 1
+    - Text: 00111100
+      Answer: 0
+    - Text: 10011000
+      Answer: 0
+    - Text: 00101011
+      Answer: 0
+    Expanding: 0
+  - Text: 14
+    Choices:
+    - Text: 00001110
+      Answer: 1
+    - Text: 01101101
+      Answer: 0
+    - Text: 11100011
+      Answer: 0
+    - Text: 10110110
+      Answer: 0
+    Expanding: 0
+  - Text: 15
+    Choices:
+    - Text: 00011000
+      Answer: 0
+    - Text: 10000011
+      Answer: 0
+    - Text: 11100000
+      Answer: 0
+    - Text: 00001111
+      Answer: 1
+    Expanding: 0
+  - Text: 16
+    Choices:
+    - Text: 01001010
+      Answer: 0
+    - Text: 00010000
+      Answer: 1
+    - Text: 10111101
+      Answer: 0
+    - Text: 01001100
+      Answer: 0
+    Expanding: 0
+  - Text: 17
+    Choices:
+    - Text: 01000110
+      Answer: 0
+    - Text: 10000101
+      Answer: 0
+    - Text: 10111010
+      Answer: 0
+    - Text: 00010001
+      Answer: 1
+    Expanding: 0
+  - Text: 18
+    Choices:
+    - Text: 00010010
+      Answer: 1
+    - Text: 10110001
+      Answer: 0
+    - Text: 00100110
+      Answer: 0
+    - Text: 00111100
+      Answer: 0
+    Expanding: 0
+  - Text: 19
+    Choices:
+    - Text: 00000100
+      Answer: 0
+    - Text: 01101111
+      Answer: 0
+    - Text: 00010011
+      Answer: 1
+    - Text: 10010101
+      Answer: 0
+    Expanding: 0
+  - Text: 20
+    Choices:
+    - Text: 11101101
+      Answer: 0
+    - Text: 11000000
+      Answer: 0
+    - Text: 11110101
+      Answer: 0
+    - Text: 00010100
+      Answer: 1
+    Expanding: 0
+  - Text: 21
+    Choices:
+    - Text: 00110111
+      Answer: 0
+    - Text: 11100000
+      Answer: 0
+    - Text: 10111010
+      Answer: 0
+    - Text: 00010101
+      Answer: 1
+    Expanding: 0
+  - Text: 22
+    Choices:
+    - Text: 11101011
+      Answer: 0
+    - Text: 01010110
+      Answer: 0
+    - Text: 00010110
+      Answer: 1
+    - Text: 11110100
+      Answer: 0
+    Expanding: 0
+  - Text: 23
+    Choices:
+    - Text: 00010111
+      Answer: 1
+    - Text: 00000010
+      Answer: 0
+    - Text: 00011111
+      Answer: 0
+    - Text: 00100001
+      Answer: 0
+    Expanding: 0
+  - Text: 24
+    Choices:
+    - Text: 10001101
+      Answer: 0
+    - Text: 10101010
+      Answer: 0
+    - Text: 00011000
+      Answer: 1
+    - Text: 00011101
+      Answer: 0
+    Expanding: 0
+  - Text: 25
+    Choices:
+    - Text: 11110111
+      Answer: 0
+    - Text: 00011001
+      Answer: 1
+    - Text: 01000100
+      Answer: 0
+    - Text: 11111010
+      Answer: 0
+    Expanding: 0
+  - Text: 26
+    Choices:
+    - Text: 10110011
+      Answer: 0
+    - Text: 00011010
+      Answer: 1
+    - Text: 00111000
+      Answer: 0
+    - Text: 10110101
+      Answer: 0
+    Expanding: 0
+  - Text: 27
+    Choices:
+    - Text: 10000001
+      Answer: 0
+    - Text: 11000111
+      Answer: 0
+    - Text: 10000111
+      Answer: 0
+    - Text: 00011011
+      Answer: 1
+    Expanding: 0
+  - Text: 28
+    Choices:
+    - Text: 00011100
+      Answer: 1
+    - Text: 11100100
+      Answer: 0
+    - Text: 00010111
+      Answer: 0
+    - Text: 01111101
+      Answer: 0
+    Expanding: 0
+  - Text: 29
+    Choices:
+    - Text: 00111101
+      Answer: 0
+    - Text: 00011101
+      Answer: 1
+    - Text: 11101000
+      Answer: 0
+    - Text: 01011111
+      Answer: 0
+    Expanding: 0
+  - Text: 30
+    Choices:
+    - Text: 00111110
+      Answer: 0
+    - Text: 01110011
+      Answer: 0
+    - Text: 10101110
+      Answer: 0
+    - Text: 00011110
+      Answer: 1
+    Expanding: 0
+  - Text: 31
+    Choices:
+    - Text: 10001001
+      Answer: 0
+    - Text: 00011111
+      Answer: 1
+    - Text: 00010100
+      Answer: 0
+    - Text: 00111010
+      Answer: 0
+    Expanding: 0
+  - Text: 32
+    Choices:
+    - Text: 00000101
+      Answer: 0
+    - Text: 00111101
+      Answer: 0
+    - Text: 00100100
+      Answer: 0
+    - Text: 00100000
+      Answer: 1
+    Expanding: 0
+  - Text: 33
+    Choices:
+    - Text: 10100000
+      Answer: 0
+    - Text: 10001110
+      Answer: 0
+    - Text: 01110010
+      Answer: 0
+    - Text: 00100001
+      Answer: 1
+    Expanding: 0
+  - Text: 34
+    Choices:
+    - Text: 11000011
+      Answer: 0
+    - Text: 11110100
+      Answer: 0
+    - Text: 00100001
+      Answer: 0
+    - Text: 00100010
+      Answer: 1
+    Expanding: 0
+  - Text: 35
+    Choices:
+    - Text: 00100011
+      Answer: 1
+    - Text: 10110011
+      Answer: 0
+    - Text: 10101101
+      Answer: 0
+    - Text: 01000011
+      Answer: 0
+    Expanding: 0
+  - Text: 36
+    Choices:
+    - Text: 01111101
+      Answer: 0
+    - Text: 01101011
+      Answer: 0
+    - Text: 00110111
+      Answer: 0
+    - Text: 00100100
+      Answer: 1
+    Expanding: 0
+  - Text: 37
+    Choices:
+    - Text: 11101100
+      Answer: 0
+    - Text: 10011001
+      Answer: 0
+    - Text: 00100101
+      Answer: 1
+    - Text: 00101111
+      Answer: 0
+    Expanding: 0
+  - Text: 38
+    Choices:
+    - Text: 10010100
+      Answer: 0
+    - Text: 00101000
+      Answer: 0
+    - Text: 00010001
+      Answer: 0
+    - Text: 00100110
+      Answer: 1
+    Expanding: 0
+  - Text: 39
+    Choices:
+    - Text: 00100111
+      Answer: 1
+    - Text: 00000011
+      Answer: 0
+    - Text: 01100101
+      Answer: 0
+    - Text: 00100010
+      Answer: 0
+    Expanding: 0
+  - Text: 40
+    Choices:
+    - Text: 01001011
+      Answer: 0
+    - Text: 10010101
+      Answer: 0
+    - Text: 00101000
+      Answer: 1
+    - Text: 11111111
+      Answer: 0
+    Expanding: 0
+  - Text: 41
+    Choices:
+    - Text: 11100001
+      Answer: 0
+    - Text: 00101101
+      Answer: 0
+    - Text: 00111101
+      Answer: 0
+    - Text: 00101001
+      Answer: 1
+    Expanding: 0
+  - Text: 42
+    Choices:
+    - Text: 10011110
+      Answer: 0
+    - Text: 01111100
+      Answer: 0
+    - Text: 01011111
+      Answer: 0
+    - Text: 00101010
+      Answer: 1
+    Expanding: 0
+  - Text: 43
+    Choices:
+    - Text: 10110001
+      Answer: 0
+    - Text: 10100111
+      Answer: 0
+    - Text: 00101011
+      Answer: 1
+    - Text: 00111110
+      Answer: 0
+    Expanding: 0
+  - Text: 44
+    Choices:
+    - Text: 00101100
+      Answer: 1
+    - Text: 10001000
+      Answer: 0
+    - Text: 11101111
+      Answer: 0
+    - Text: 00001100
+      Answer: 0
+    Expanding: 0
+  - Text: 45
+    Choices:
+    - Text: 00110001
+      Answer: 0
+    - Text: 11101111
+      Answer: 0
+    - Text: 11001110
+      Answer: 0
+    - Text: 00101101
+      Answer: 1
+    Expanding: 0
+  - Text: 46
+    Choices:
+    - Text: 10011001
+      Answer: 0
+    - Text: 10011000
+      Answer: 0
+    - Text: 00011010
+      Answer: 0
+    - Text: 00101110
+      Answer: 1
+    Expanding: 0
+  - Text: 47
+    Choices:
+    - Text: 01100100
+      Answer: 0
+    - Text: 10011011
+      Answer: 0
+    - Text: 00101111
+      Answer: 1
+    - Text: 10001111
+      Answer: 0
+    Expanding: 0
+  - Text: 48
+    Choices:
+    - Text: 00110000
+      Answer: 1
+    - Text: 11011000
+      Answer: 0
+    - Text: 11011111
+      Answer: 0
+    - Text: 11001111
+      Answer: 0
+    Expanding: 0
+  - Text: 49
+    Choices:
+    - Text: 10010101
+      Answer: 0
+    - Text: 10011010
+      Answer: 0
+    - Text: 00110001
+      Answer: 1
+    - Text: 00111100
+      Answer: 0
+    Expanding: 0
+  - Text: 50
+    Choices:
+    - Text: 11001110
+      Answer: 0
+    - Text: 00011100
+      Answer: 0
+    - Text: 01001101
+      Answer: 0
+    - Text: 00110010
+      Answer: 1
+    Expanding: 0
+  - Text: 51
+    Choices:
+    - Text: 00110111
+      Answer: 0
+    - Text: 11001011
+      Answer: 0
+    - Text: 11110010
+      Answer: 0
+    - Text: 00110011
+      Answer: 1
+    Expanding: 0
+  - Text: 52
+    Choices:
+    - Text: 11000110
+      Answer: 0
+    - Text: 10101000
+      Answer: 0
+    - Text: 00110100
+      Answer: 1
+    - Text: 00000100
+      Answer: 0
+    Expanding: 0
+  - Text: 53
+    Choices:
+    - Text: 11101010
+      Answer: 0
+    - Text: 10001010
+      Answer: 0
+    - Text: 10001011
+      Answer: 0
+    - Text: 00110101
+      Answer: 1
+    Expanding: 0
+  - Text: 54
+    Choices:
+    - Text: 11110011
+      Answer: 0
+    - Text: 10111001
+      Answer: 0
+    - Text: 01110001
+      Answer: 0
+    - Text: 00110110
+      Answer: 1
+    Expanding: 0
+  - Text: 55
+    Choices:
+    - Text: 01010011
+      Answer: 0
+    - Text: 00110010
+      Answer: 0
+    - Text: 00110111
+      Answer: 1
+    - Text: 11010001
+      Answer: 0
+    Expanding: 0
+  - Text: 56
+    Choices:
+    - Text: 11001111
+      Answer: 0
+    - Text: 10010100
+      Answer: 0
+    - Text: 11110001
+      Answer: 0
+    - Text: 00111000
+      Answer: 1
+    Expanding: 0
+  - Text: 57
+    Choices:
+    - Text: 11101100
+      Answer: 0
+    - Text: 00001001
+      Answer: 0
+    - Text: 10001001
+      Answer: 0
+    - Text: 00111001
+      Answer: 1
+    Expanding: 0
+  - Text: 58
+    Choices:
+    - Text: 00100100
+      Answer: 0
+    - Text: 11110011
+      Answer: 0
+    - Text: 00111010
+      Answer: 1
+    - Text: 11000001
+      Answer: 0
+    Expanding: 0
+  - Text: 59
+    Choices:
+    - Text: 00111011
+      Answer: 1
+    - Text: 01000110
+      Answer: 0
+    - Text: 00001011
+      Answer: 0
+    - Text: 11110100
+      Answer: 0
+    Expanding: 0
+  - Text: 60
+    Choices:
+    - Text: 00000000
+      Answer: 0
+    - Text: 11010000
+      Answer: 0
+    - Text: 00111100
+      Answer: 1
+    - Text: 00110110
+      Answer: 0
+    Expanding: 0
+  - Text: 61
+    Choices:
+    - Text: 00111101
+      Answer: 1
+    - Text: 10111110
+      Answer: 0
+    - Text: 10100111
+      Answer: 0
+    - Text: 10101101
+      Answer: 0
+    Expanding: 0
+  - Text: 62
+    Choices:
+    - Text: 00111110
+      Answer: 1
+    - Text: 00001111
+      Answer: 0
+    - Text: 01100001
+      Answer: 0
+    - Text: 01001100
+      Answer: 0
+    Expanding: 0
+  - Text: 63
+    Choices:
+    - Text: 00000101
+      Answer: 0
+    - Text: 00111110
+      Answer: 0
+    - Text: 00010011
+      Answer: 0
+    - Text: 00111111
+      Answer: 1
+    Expanding: 0
+  - Text: 64
+    Choices:
+    - Text: 01000000
+      Answer: 1
+    - Text: 10001111
+      Answer: 0
+    - Text: 10100000
+      Answer: 0
+    - Text: 10000110
+      Answer: 0
+    Expanding: 0
+  - Text: 65
+    Choices:
+    - Text: 01000001
+      Answer: 1
+    - Text: 00100000
+      Answer: 0
+    - Text: 00000110
+      Answer: 0
+    - Text: 01011101
+      Answer: 0
+    Expanding: 0
+  - Text: 66
+    Choices:
+    - Text: 01000010
+      Answer: 1
+    - Text: 01001000
+      Answer: 0
+    - Text: 01010101
+      Answer: 0
+    - Text: 10001000
+      Answer: 0
+    Expanding: 0
+  - Text: 67
+    Choices:
+    - Text: 11110100
+      Answer: 0
+    - Text: 01000011
+      Answer: 1
+    - Text: 11110100
+      Answer: 0
+    - Text: 00000000
+      Answer: 0
+    Expanding: 0
+  - Text: 68
+    Choices:
+    - Text: 01000100
+      Answer: 1
+    - Text: 01001111
+      Answer: 0
+    - Text: 01101101
+      Answer: 0
+    - Text: 10110110
+      Answer: 0
+    Expanding: 0
+  - Text: 69
+    Choices:
+    - Text: 01000101
+      Answer: 1
+    - Text: 10010000
+      Answer: 0
+    - Text: 10010011
+      Answer: 0
+    - Text: 00101010
+      Answer: 0
+    Expanding: 0
+  - Text: 70
+    Choices:
+    - Text: 01001000
+      Answer: 0
+    - Text: 01000110
+      Answer: 1
+    - Text: 10100010
+      Answer: 0
+    - Text: 00100111
+      Answer: 0
+    Expanding: 0
+  - Text: 71
+    Choices:
+    - Text: 11000101
+      Answer: 0
+    - Text: 00101111
+      Answer: 0
+    - Text: 10101101
+      Answer: 0
+    - Text: 01000111
+      Answer: 1
+    Expanding: 0
+  - Text: 72
+    Choices:
+    - Text: 00101110
+      Answer: 0
+    - Text: 01000010
+      Answer: 0
+    - Text: 11110100
+      Answer: 0
+    - Text: 01001000
+      Answer: 1
+    Expanding: 0
+  - Text: 73
+    Choices:
+    - Text: 00011101
+      Answer: 0
+    - Text: 01101110
+      Answer: 0
+    - Text: 01001001
+      Answer: 1
+    - Text: 01100001
+      Answer: 0
+    Expanding: 0
+  - Text: 74
+    Choices:
+    - Text: 01001010
+      Answer: 1
+    - Text: 11011000
+      Answer: 0
+    - Text: 01110111
+      Answer: 0
+    - Text: 11101000
+      Answer: 0
+    Expanding: 0
+  - Text: 75
+    Choices:
+    - Text: 01001011
+      Answer: 1
+    - Text: 10100110
+      Answer: 0
+    - Text: 10001110
+      Answer: 0
+    - Text: 11010110
+      Answer: 0
+    Expanding: 0
+  - Text: 76
+    Choices:
+    - Text: 01011010
+      Answer: 0
+    - Text: 01010100
+      Answer: 0
+    - Text: 01001100
+      Answer: 1
+    - Text: 11101011
+      Answer: 0
+    Expanding: 0
+  - Text: 77
+    Choices:
+    - Text: 11010100
+      Answer: 0
+    - Text: 01110101
+      Answer: 0
+    - Text: 01001101
+      Answer: 1
+    - Text: 11101001
+      Answer: 0
+    Expanding: 0
+  - Text: 78
+    Choices:
+    - Text: 01001110
+      Answer: 1
+    - Text: 11011111
+      Answer: 0
+    - Text: 11100001
+      Answer: 0
+    - Text: 00101111
+      Answer: 0
+    Expanding: 0
+  - Text: 79
+    Choices:
+    - Text: 01110000
+      Answer: 0
+    - Text: 10110100
+      Answer: 0
+    - Text: 01010001
+      Answer: 0
+    - Text: 01001111
+      Answer: 1
+    Expanding: 0
+  - Text: 80
+    Choices:
+    - Text: 00100111
+      Answer: 0
+    - Text: 10101011
+      Answer: 0
+    - Text: 01010000
+      Answer: 1
+    - Text: 10111111
+      Answer: 0
+    Expanding: 0
+  - Text: 81
+    Choices:
+    - Text: 01010001
+      Answer: 1
+    - Text: 10111000
+      Answer: 0
+    - Text: 01001111
+      Answer: 0
+    - Text: 11010101
+      Answer: 0
+    Expanding: 0
+  - Text: 82
+    Choices:
+    - Text: 01100000
+      Answer: 0
+    - Text: 00011100
+      Answer: 0
+    - Text: 01010010
+      Answer: 1
+    - Text: 00101111
+      Answer: 0
+    Expanding: 0
+  - Text: 83
+    Choices:
+    - Text: 10110001
+      Answer: 0
+    - Text: 10111111
+      Answer: 0
+    - Text: 01010011
+      Answer: 1
+    - Text: 10101101
+      Answer: 0
+    Expanding: 0
+  - Text: 84
+    Choices:
+    - Text: 10001010
+      Answer: 0
+    - Text: 01010100
+      Answer: 1
+    - Text: 10100110
+      Answer: 0
+    - Text: 10000011
+      Answer: 0
+    Expanding: 0
+  - Text: 85
+    Choices:
+    - Text: 11101110
+      Answer: 0
+    - Text: 11000000
+      Answer: 0
+    - Text: 11101101
+      Answer: 0
+    - Text: 01010101
+      Answer: 1
+    Expanding: 0
+  - Text: 86
+    Choices:
+    - Text: 10100111
+      Answer: 0
+    - Text: 01010110
+      Answer: 1
+    - Text: 10101101
+      Answer: 0
+    - Text: 00111001
+      Answer: 0
+    Expanding: 0
+  - Text: 87
+    Choices:
+    - Text: 01010111
+      Answer: 1
+    - Text: 10111101
+      Answer: 0
+    - Text: 01011101
+      Answer: 0
+    - Text: 00111001
+      Answer: 0
+    Expanding: 0
+  - Text: 88
+    Choices:
+    - Text: 01011100
+      Answer: 0
+    - Text: 00111101
+      Answer: 0
+    - Text: 01011000
+      Answer: 1
+    - Text: 00000100
+      Answer: 0
+    Expanding: 0
+  - Text: 89
+    Choices:
+    - Text: 10100110
+      Answer: 0
+    - Text: 01011001
+      Answer: 1
+    - Text: 01101010
+      Answer: 0
+    - Text: 00000001
+      Answer: 0
+    Expanding: 0
+  - Text: 90
+    Choices:
+    - Text: 01100101
+      Answer: 0
+    - Text: 01000010
+      Answer: 0
+    - Text: 10100011
+      Answer: 0
+    - Text: 01011010
+      Answer: 1
+    Expanding: 0
+  - Text: 91
+    Choices:
+    - Text: 00111110
+      Answer: 0
+    - Text: 01011011
+      Answer: 1
+    - Text: 01111111
+      Answer: 0
+    - Text: 01001010
+      Answer: 0
+    Expanding: 0
+  - Text: 92
+    Choices:
+    - Text: 01011100
+      Answer: 1
+    - Text: 00011110
+      Answer: 0
+    - Text: 10010000
+      Answer: 0
+    - Text: 01111011
+      Answer: 0
+    Expanding: 0
+  - Text: 93
+    Choices:
+    - Text: 11110011
+      Answer: 0
+    - Text: 01011101
+      Answer: 1
+    - Text: 10100000
+      Answer: 0
+    - Text: 00100100
+      Answer: 0
+    Expanding: 0
+  - Text: 94
+    Choices:
+    - Text: 00001110
+      Answer: 0
+    - Text: 01001111
+      Answer: 0
+    - Text: 01011110
+      Answer: 1
+    - Text: 10110101
+      Answer: 0
+    Expanding: 0
+  - Text: 95
+    Choices:
+    - Text: 11110100
+      Answer: 0
+    - Text: 01011111
+      Answer: 1
+    - Text: 00110111
+      Answer: 0
+    - Text: 00011110
+      Answer: 0
+    Expanding: 0
+  - Text: 96
+    Choices:
+    - Text: 01100000
+      Answer: 1
+    - Text: 01101011
+      Answer: 0
+    - Text: 01001100
+      Answer: 0
+    - Text: 11100001
+      Answer: 0
+    Expanding: 0
+  - Text: 97
+    Choices:
+    - Text: 00100010
+      Answer: 0
+    - Text: 01100100
+      Answer: 0
+    - Text: 01100001
+      Answer: 1
+    - Text: 01111111
+      Answer: 0
+    Expanding: 0
+  - Text: 98
+    Choices:
+    - Text: 01100010
+      Answer: 1
+    - Text: 10010101
+      Answer: 0
+    - Text: 11001101
+      Answer: 0
+    - Text: 00111100
+      Answer: 0
+    Expanding: 0
+  - Text: 99
+    Choices:
+    - Text: 11101010
+      Answer: 0
+    - Text: 01100011
+      Answer: 1
+    - Text: 11111111
+      Answer: 0
+    - Text: 11000110
+      Answer: 0
+    Expanding: 0
+  - Text: 100
+    Choices:
+    - Text: 01011100
+      Answer: 0
+    - Text: 11110010
+      Answer: 0
+    - Text: 01100100
+      Answer: 1
+    - Text: 11110010
+      Answer: 0
+    Expanding: 0
+  - Text: 101
+    Choices:
+    - Text: 10110010
+      Answer: 0
+    - Text: 01100101
+      Answer: 1
+    - Text: 11100010
+      Answer: 0
+    - Text: 10010111
+      Answer: 0
+    Expanding: 0
+  - Text: 102
+    Choices:
+    - Text: 01010000
+      Answer: 0
+    - Text: 01100110
+      Answer: 1
+    - Text: 10100001
+      Answer: 0
+    - Text: 00111010
+      Answer: 0
+    Expanding: 0
+  - Text: 103
+    Choices:
+    - Text: 00011100
+      Answer: 0
+    - Text: 11001101
+      Answer: 0
+    - Text: 01100111
+      Answer: 1
+    - Text: 01000000
+      Answer: 0
+    Expanding: 0
+  - Text: 104
+    Choices:
+    - Text: 00111011
+      Answer: 0
+    - Text: 00010000
+      Answer: 0
+    - Text: 01101000
+      Answer: 1
+    - Text: 00110101
+      Answer: 0
+    Expanding: 0
+  - Text: 105
+    Choices:
+    - Text: 00010100
+      Answer: 0
+    - Text: 01101001
+      Answer: 1
+    - Text: 01111110
+      Answer: 0
+    - Text: 11111000
+      Answer: 0
+    Expanding: 0
+  - Text: 106
+    Choices:
+    - Text: 11001001
+      Answer: 0
+    - Text: 01101010
+      Answer: 1
+    - Text: 10110000
+      Answer: 0
+    - Text: 10000001
+      Answer: 0
+    Expanding: 0
+  - Text: 107
+    Choices:
+    - Text: 01110101
+      Answer: 0
+    - Text: 10010111
+      Answer: 0
+    - Text: 01101011
+      Answer: 1
+    - Text: 11101000
+      Answer: 0
+    Expanding: 0
+  - Text: 108
+    Choices:
+    - Text: 01101010
+      Answer: 0
+    - Text: 11101010
+      Answer: 0
+    - Text: 01101100
+      Answer: 1
+    - Text: 10011110
+      Answer: 0
+    Expanding: 0
+  - Text: 109
+    Choices:
+    - Text: 01101101
+      Answer: 1
+    - Text: 01010110
+      Answer: 0
+    - Text: 00110101
+      Answer: 0
+    - Text: 10110010
+      Answer: 0
+    Expanding: 0
+  - Text: 110
+    Choices:
+    - Text: 00100100
+      Answer: 0
+    - Text: 00010110
+      Answer: 0
+    - Text: 01101110
+      Answer: 1
+    - Text: 11011101
+      Answer: 0
+    Expanding: 0
+  - Text: 111
+    Choices:
+    - Text: 11100100
+      Answer: 0
+    - Text: 11010101
+      Answer: 0
+    - Text: 00001011
+      Answer: 0
+    - Text: 01101111
+      Answer: 1
+    Expanding: 0
+  - Text: 112
+    Choices:
+    - Text: 01110000
+      Answer: 1
+    - Text: 00001100
+      Answer: 0
+    - Text: 01011001
+      Answer: 0
+    - Text: 11100000
+      Answer: 0
+    Expanding: 0
+  - Text: 113
+    Choices:
+    - Text: 01110001
+      Answer: 1
+    - Text: 00000101
+      Answer: 0
+    - Text: 01111111
+      Answer: 0
+    - Text: 11010000
+      Answer: 0
+    Expanding: 0
+  - Text: 114
+    Choices:
+    - Text: 01000000
+      Answer: 0
+    - Text: 01110010
+      Answer: 1
+    - Text: 11000011
+      Answer: 0
+    - Text: 00001000
+      Answer: 0
+    Expanding: 0
+  - Text: 115
+    Choices:
+    - Text: 01110011
+      Answer: 1
+    - Text: 11011001
+      Answer: 0
+    - Text: 01001100
+      Answer: 0
+    - Text: 01010001
+      Answer: 0
+    Expanding: 0
+  - Text: 116
+    Choices:
+    - Text: 01110100
+      Answer: 1
+    - Text: 11011100
+      Answer: 0
+    - Text: 11100110
+      Answer: 0
+    - Text: 11001111
+      Answer: 0
+    Expanding: 0
+  - Text: 117
+    Choices:
+    - Text: 01110111
+      Answer: 0
+    - Text: 01110100
+      Answer: 0
+    - Text: 10101110
+      Answer: 0
+    - Text: 01110101
+      Answer: 1
+    Expanding: 0
+  - Text: 118
+    Choices:
+    - Text: 10011110
+      Answer: 0
+    - Text: 01111010
+      Answer: 0
+    - Text: 01101100
+      Answer: 0
+    - Text: 01110110
+      Answer: 1
+    Expanding: 0
+  - Text: 119
+    Choices:
+    - Text: 11111111
+      Answer: 0
+    - Text: 01000110
+      Answer: 0
+    - Text: 01110111
+      Answer: 1
+    - Text: 00100110
+      Answer: 0
+    Expanding: 0
+  - Text: 120
+    Choices:
+    - Text: 10100000
+      Answer: 0
+    - Text: 01111000
+      Answer: 1
+    - Text: 11111011
+      Answer: 0
+    - Text: 11110010
+      Answer: 0
+    Expanding: 0
+  - Text: 121
+    Choices:
+    - Text: 10110010
+      Answer: 0
+    - Text: 11001001
+      Answer: 0
+    - Text: 10110110
+      Answer: 0
+    - Text: 01111001
+      Answer: 1
+    Expanding: 0
+  - Text: 122
+    Choices:
+    - Text: 01111010
+      Answer: 1
+    - Text: 11111010
+      Answer: 0
+    - Text: 11111101
+      Answer: 0
+    - Text: 01100111
+      Answer: 0
+    Expanding: 0
+  - Text: 123
+    Choices:
+    - Text: 10000101
+      Answer: 0
+    - Text: 00101101
+      Answer: 0
+    - Text: 01111011
+      Answer: 1
+    - Text: 01011011
+      Answer: 0
+    Expanding: 0
+  - Text: 124
+    Choices:
+    - Text: 00101010
+      Answer: 0
+    - Text: 01111100
+      Answer: 1
+    - Text: 01010011
+      Answer: 0
+    - Text: 10111001
+      Answer: 0
+    Expanding: 0
+  - Text: 125
+    Choices:
+    - Text: 10000011
+      Answer: 0
+    - Text: 11011000
+      Answer: 0
+    - Text: 00010001
+      Answer: 0
+    - Text: 01111101
+      Answer: 1
+    Expanding: 0
+  - Text: 126
+    Choices:
+    - Text: 11100101
+      Answer: 0
+    - Text: 00101111
+      Answer: 0
+    - Text: 11111011
+      Answer: 0
+    - Text: 01111110
+      Answer: 1
+    Expanding: 0
+  - Text: 127
+    Choices:
+    - Text: 11110110
+      Answer: 0
+    - Text: 01101011
+      Answer: 0
+    - Text: 10000100
+      Answer: 0
+    - Text: 01111111
+      Answer: 1
+    Expanding: 0
+  - Text: 128
+    Choices:
+    - Text: 01011100
+      Answer: 0
+    - Text: 10000001
+      Answer: 0
+    - Text: 10000000
+      Answer: 1
+    - Text: 11010110
+      Answer: 0
+    Expanding: 0
+  - Text: 129
+    Choices:
+    - Text: 10000001
+      Answer: 1
+    - Text: 00110110
+      Answer: 0
+    - Text: 11010010
+      Answer: 0
+    - Text: 00000111
+      Answer: 0
+    Expanding: 0
+  - Text: 130
+    Choices:
+    - Text: 01111000
+      Answer: 0
+    - Text: 01000010
+      Answer: 0
+    - Text: 10000010
+      Answer: 1
+    - Text: 01110000
+      Answer: 0
+    Expanding: 0
+  - Text: 131
+    Choices:
+    - Text: 00100101
+      Answer: 0
+    - Text: 10000011
+      Answer: 1
+    - Text: 10101100
+      Answer: 0
+    - Text: 10011000
+      Answer: 0
+    Expanding: 0
+  - Text: 132
+    Choices:
+    - Text: 11010110
+      Answer: 0
+    - Text: 10000100
+      Answer: 1
+    - Text: 00011111
+      Answer: 0
+    - Text: 11110000
+      Answer: 0
+    Expanding: 0
+  - Text: 133
+    Choices:
+    - Text: 10100011
+      Answer: 0
+    - Text: 01001010
+      Answer: 0
+    - Text: 10000101
+      Answer: 1
+    - Text: 01111111
+      Answer: 0
+    Expanding: 0
+  - Text: 134
+    Choices:
+    - Text: 01110011
+      Answer: 0
+    - Text: 10000110
+      Answer: 1
+    - Text: 00100110
+      Answer: 0
+    - Text: 00110100
+      Answer: 0
+    Expanding: 0
+  - Text: 135
+    Choices:
+    - Text: 10000111
+      Answer: 1
+    - Text: 01111010
+      Answer: 0
+    - Text: 00101011
+      Answer: 0
+    - Text: 11010110
+      Answer: 0
+    Expanding: 0
+  - Text: 136
+    Choices:
+    - Text: 10100010
+      Answer: 0
+    - Text: 11101011
+      Answer: 0
+    - Text: 10001000
+      Answer: 1
+    - Text: 01011000
+      Answer: 0
+    Expanding: 0
+  - Text: 137
+    Choices:
+    - Text: 00101010
+      Answer: 0
+    - Text: 10001001
+      Answer: 1
+    - Text: 10011111
+      Answer: 0
+    - Text: 10000010
+      Answer: 0
+    Expanding: 0
+  - Text: 138
+    Choices:
+    - Text: 00010010
+      Answer: 0
+    - Text: 10001010
+      Answer: 1
+    - Text: 10010000
+      Answer: 0
+    - Text: 10000100
+      Answer: 0
+    Expanding: 0
+  - Text: 139
+    Choices:
+    - Text: 00110110
+      Answer: 0
+    - Text: 10101001
+      Answer: 0
+    - Text: 10001011
+      Answer: 1
+    - Text: 00011011
+      Answer: 0
+    Expanding: 0
+  - Text: 140
+    Choices:
+    - Text: 00110100
+      Answer: 0
+    - Text: 00001010
+      Answer: 0
+    - Text: 10001100
+      Answer: 1
+    - Text: 10001011
+      Answer: 0
+    Expanding: 0
+  - Text: 141
+    Choices:
+    - Text: 10001101
+      Answer: 1
+    - Text: 01001110
+      Answer: 0
+    - Text: 00110001
+      Answer: 0
+    - Text: 00010101
+      Answer: 0
+    Expanding: 0
+  - Text: 142
+    Choices:
+    - Text: 11111011
+      Answer: 0
+    - Text: 00010111
+      Answer: 0
+    - Text: 10001110
+      Answer: 1
+    - Text: 01010110
+      Answer: 0
+    Expanding: 0
+  - Text: 143
+    Choices:
+    - Text: 10001111
+      Answer: 1
+    - Text: 00111011
+      Answer: 0
+    - Text: 00010101
+      Answer: 0
+    - Text: 01100110
+      Answer: 0
+    Expanding: 0
+  - Text: 144
+    Choices:
+    - Text: 00111000
+      Answer: 0
+    - Text: 00101101
+      Answer: 0
+    - Text: 10100111
+      Answer: 0
+    - Text: 10010000
+      Answer: 1
+    Expanding: 0
+  - Text: 145
+    Choices:
+    - Text: 01111011
+      Answer: 0
+    - Text: 11001111
+      Answer: 0
+    - Text: 00101110
+      Answer: 0
+    - Text: 10010001
+      Answer: 1
+    Expanding: 0
+  - Text: 146
+    Choices:
+    - Text: 10010010
+      Answer: 1
+    - Text: 01101101
+      Answer: 0
+    - Text: 00100001
+      Answer: 0
+    - Text: 10110001
+      Answer: 0
+    Expanding: 0
+  - Text: 147
+    Choices:
+    - Text: 11010011
+      Answer: 0
+    - Text: 10010011
+      Answer: 1
+    - Text: 10010010
+      Answer: 0
+    - Text: 01000011
+      Answer: 0
+    Expanding: 0
+  - Text: 148
+    Choices:
+    - Text: 00110110
+      Answer: 0
+    - Text: 00100010
+      Answer: 0
+    - Text: 10010100
+      Answer: 1
+    - Text: 10011100
+      Answer: 0
+    Expanding: 0
+  - Text: 149
+    Choices:
+    - Text: 11100010
+      Answer: 0
+    - Text: 10110001
+      Answer: 0
+    - Text: 10001000
+      Answer: 0
+    - Text: 10010101
+      Answer: 1
+    Expanding: 0
+  - Text: 150
+    Choices:
+    - Text: 11100000
+      Answer: 0
+    - Text: 01111000
+      Answer: 0
+    - Text: 11110111
+      Answer: 0
+    - Text: 10010110
+      Answer: 1
+    Expanding: 0
+  - Text: 00000000
+    Choices:
+    - Text: 146
+      Answer: 0
+    - Text: 191
+      Answer: 0
+    - Text: 132
+      Answer: 0
+    - Text: 0
+      Answer: 1
+    Expanding: 0
+  - Text: 00000001
+    Choices:
+    - Text: 15
+      Answer: 0
+    - Text: 1
+      Answer: 1
+    - Text: 54
+      Answer: 0
+    - Text: 125
+      Answer: 0
+    Expanding: 0
+  - Text: 00000010
+    Choices:
+    - Text: 24
+      Answer: 0
+    - Text: 180
+      Answer: 0
+    - Text: 32
+      Answer: 0
+    - Text: 2
+      Answer: 1
+    Expanding: 0
+  - Text: 00000011
+    Choices:
+    - Text: 248
+      Answer: 0
+    - Text: 56
+      Answer: 0
+    - Text: 73
+      Answer: 0
+    - Text: 3
+      Answer: 1
+    Expanding: 0
+  - Text: 00000100
+    Choices:
+    - Text: 74
+      Answer: 0
+    - Text: 203
+      Answer: 0
+    - Text: 4
+      Answer: 1
+    - Text: 180
+      Answer: 0
+    Expanding: 0
+  - Text: 00000101
+    Choices:
+    - Text: 109
+      Answer: 0
+    - Text: 140
+      Answer: 0
+    - Text: 23
+      Answer: 0
+    - Text: 5
+      Answer: 1
+    Expanding: 0
+  - Text: 00000110
+    Choices:
+    - Text: 174
+      Answer: 0
+    - Text: 164
+      Answer: 0
+    - Text: 6
+      Answer: 1
+    - Text: 67
+      Answer: 0
+    Expanding: 0
+  - Text: 00000111
+    Choices:
+    - Text: 7
+      Answer: 1
+    - Text: 109
+      Answer: 0
+    - Text: 254
+      Answer: 0
+    - Text: 151
+      Answer: 0
+    Expanding: 0
+  - Text: 00001000
+    Choices:
+    - Text: 218
+      Answer: 0
+    - Text: 87
+      Answer: 0
+    - Text: 121
+      Answer: 0
+    - Text: 8
+      Answer: 1
+    Expanding: 0
+  - Text: 00001001
+    Choices:
+    - Text: 52
+      Answer: 0
+    - Text: 9
+      Answer: 1
+    - Text: 240
+      Answer: 0
+    - Text: 128
+      Answer: 0
+    Expanding: 0
+  - Text: 00001010
+    Choices:
+    - Text: 212
+      Answer: 0
+    - Text: 111
+      Answer: 0
+    - Text: 10
+      Answer: 1
+    - Text: 177
+      Answer: 0
+    Expanding: 0
+  - Text: 00001011
+    Choices:
+    - Text: 11
+      Answer: 1
+    - Text: 15
+      Answer: 0
+    - Text: 205
+      Answer: 0
+    - Text: 216
+      Answer: 0
+    Expanding: 0
+  - Text: 00001100
+    Choices:
+    - Text: 96
+      Answer: 0
+    - Text: 10
+      Answer: 0
+    - Text: 227
+      Answer: 0
+    - Text: 12
+      Answer: 1
+    Expanding: 0
+  - Text: 00001101
+    Choices:
+    - Text: 237
+      Answer: 0
+    - Text: 252
+      Answer: 0
+    - Text: 53
+      Answer: 0
+    - Text: 13
+      Answer: 1
+    Expanding: 0
+  - Text: 00001110
+    Choices:
+    - Text: 175
+      Answer: 0
+    - Text: 120
+      Answer: 0
+    - Text: 122
+      Answer: 0
+    - Text: 14
+      Answer: 1
+    Expanding: 0
+  - Text: 00001111
+    Choices:
+    - Text: 253
+      Answer: 0
+    - Text: 15
+      Answer: 1
+    - Text: 120
+      Answer: 0
+    - Text: 33
+      Answer: 0
+    Expanding: 0
+  - Text: 00010000
+    Choices:
+    - Text: 16
+      Answer: 1
+    - Text: 241
+      Answer: 0
+    - Text: 117
+      Answer: 0
+    - Text: 111
+      Answer: 0
+    Expanding: 0
+  - Text: 00010001
+    Choices:
+    - Text: 44
+      Answer: 0
+    - Text: 228
+      Answer: 0
+    - Text: 17
+      Answer: 1
+    - Text: 76
+      Answer: 0
+    Expanding: 0
+  - Text: 00010010
+    Choices:
+    - Text: 216
+      Answer: 0
+    - Text: 104
+      Answer: 0
+    - Text: 18
+      Answer: 1
+    - Text: 2
+      Answer: 0
+    Expanding: 0
+  - Text: 00010011
+    Choices:
+    - Text: 184
+      Answer: 0
+    - Text: 19
+      Answer: 1
+    - Text: 171
+      Answer: 0
+    - Text: 97
+      Answer: 0
+    Expanding: 0
+  - Text: 00010100
+    Choices:
+    - Text: 15
+      Answer: 0
+    - Text: 251
+      Answer: 0
+    - Text: 20
+      Answer: 1
+    - Text: 217
+      Answer: 0
+    Expanding: 0
+  - Text: 00010101
+    Choices:
+    - Text: 21
+      Answer: 1
+    - Text: 250
+      Answer: 0
+    - Text: 175
+      Answer: 0
+    - Text: 7
+      Answer: 0
+    Expanding: 0
+  - Text: 00010110
+    Choices:
+    - Text: 22
+      Answer: 1
+    - Text: 215
+      Answer: 0
+    - Text: 227
+      Answer: 0
+    - Text: 115
+      Answer: 0
+    Expanding: 0
+  - Text: 00010111
+    Choices:
+    - Text: 133
+      Answer: 0
+    - Text: 23
+      Answer: 1
+    - Text: 208
+      Answer: 0
+    - Text: 122
+      Answer: 0
+    Expanding: 0
+  - Text: 00011000
+    Choices:
+    - Text: 24
+      Answer: 1
+    - Text: 251
+      Answer: 0
+    - Text: 83
+      Answer: 0
+    - Text: 119
+      Answer: 0
+    Expanding: 0
+  - Text: 00011001
+    Choices:
+    - Text: 140
+      Answer: 0
+    - Text: 248
+      Answer: 0
+    - Text: 25
+      Answer: 1
+    - Text: 189
+      Answer: 0
+    Expanding: 0
+  - Text: 00011010
+    Choices:
+    - Text: 26
+      Answer: 1
+    - Text: 153
+      Answer: 0
+    - Text: 30
+      Answer: 0
+    - Text: 125
+      Answer: 0
+    Expanding: 0
+  - Text: 00011011
+    Choices:
+    - Text: 200
+      Answer: 0
+    - Text: 27
+      Answer: 1
+    - Text: 206
+      Answer: 0
+    - Text: 245
+      Answer: 0
+    Expanding: 0
+  - Text: 00011100
+    Choices:
+    - Text: 28
+      Answer: 1
+    - Text: 147
+      Answer: 0
+    - Text: 230
+      Answer: 0
+    - Text: 50
+      Answer: 0
+    Expanding: 0
+  - Text: 00011101
+    Choices:
+    - Text: 71
+      Answer: 0
+    - Text: 164
+      Answer: 0
+    - Text: 29
+      Answer: 1
+    - Text: 224
+      Answer: 0
+    Expanding: 0
+  - Text: 00011110
+    Choices:
+    - Text: 84
+      Answer: 0
+    - Text: 30
+      Answer: 1
+    - Text: 70
+      Answer: 0
+    - Text: 156
+      Answer: 0
+    Expanding: 0
+  - Text: 00011111
+    Choices:
+    - Text: 24
+      Answer: 0
+    - Text: 152
+      Answer: 0
+    - Text: 31
+      Answer: 1
+    - Text: 184
+      Answer: 0
+    Expanding: 0
+  - Text: 00100000
+    Choices:
+    - Text: 232
+      Answer: 0
+    - Text: 54
+      Answer: 0
+    - Text: 32
+      Answer: 1
+    - Text: 73
+      Answer: 0
+    Expanding: 0
+  - Text: 00100001
+    Choices:
+    - Text: 224
+      Answer: 0
+    - Text: 33
+      Answer: 1
+    - Text: 82
+      Answer: 0
+    - Text: 111
+      Answer: 0
+    Expanding: 0
+  - Text: 00100010
+    Choices:
+    - Text: 175
+      Answer: 0
+    - Text: 12
+      Answer: 0
+    - Text: 21
+      Answer: 0
+    - Text: 34
+      Answer: 1
+    Expanding: 0
+  - Text: 00100011
+    Choices:
+    - Text: 160
+      Answer: 0
+    - Text: 35
+      Answer: 1
+    - Text: 7
+      Answer: 0
+    - Text: 196
+      Answer: 0
+    Expanding: 0
+  - Text: 00100100
+    Choices:
+    - Text: 136
+      Answer: 0
+    - Text: 36
+      Answer: 1
+    - Text: 197
+      Answer: 0
+    - Text: 230
+      Answer: 0
+    Expanding: 0
+  - Text: 00100101
+    Choices:
+    - Text: 12
+      Answer: 0
+    - Text: 37
+      Answer: 1
+    - Text: 179
+      Answer: 0
+    - Text: 252
+      Answer: 0
+    Expanding: 0
+  - Text: 00100110
+    Choices:
+    - Text: 137
+      Answer: 0
+    - Text: 38
+      Answer: 1
+    - Text: 59
+      Answer: 0
+    - Text: 96
+      Answer: 0
+    Expanding: 0
+  - Text: 00100111
+    Choices:
+    - Text: 210
+      Answer: 0
+    - Text: 6
+      Answer: 0
+    - Text: 39
+      Answer: 1
+    - Text: 110
+      Answer: 0
+    Expanding: 0
+  - Text: 00101000
+    Choices:
+    - Text: 105
+      Answer: 0
+    - Text: 64
+      Answer: 0
+    - Text: 40
+      Answer: 1
+    - Text: 32
+      Answer: 0
+    Expanding: 0
+  - Text: 00101001
+    Choices:
+    - Text: 51
+      Answer: 0
+    - Text: 41
+      Answer: 1
+    - Text: 42
+      Answer: 0
+    - Text: 225
+      Answer: 0
+    Expanding: 0
+  - Text: 00101010
+    Choices:
+    - Text: 148
+      Answer: 0
+    - Text: 42
+      Answer: 1
+    - Text: 154
+      Answer: 0
+    - Text: 100
+      Answer: 0
+    Expanding: 0
+  - Text: 00101011
+    Choices:
+    - Text: 21
+      Answer: 0
+    - Text: 43
+      Answer: 1
+    - Text: 22
+      Answer: 0
+    - Text: 49
+      Answer: 0
+    Expanding: 0
+  - Text: 00101100
+    Choices:
+    - Text: 44
+      Answer: 1
+    - Text: 165
+      Answer: 0
+    - Text: 106
+      Answer: 0
+    - Text: 53
+      Answer: 0
+    Expanding: 0
+  - Text: 00101101
+    Choices:
+    - Text: 45
+      Answer: 1
+    - Text: 123
+      Answer: 0
+    - Text: 34
+      Answer: 0
+    - Text: 73
+      Answer: 0
+    Expanding: 0
+  - Text: 00101110
+    Choices:
+    - Text: 83
+      Answer: 0
+    - Text: 46
+      Answer: 1
+    - Text: 191
+      Answer: 0
+    - Text: 81
+      Answer: 0
+    Expanding: 0
+  - Text: 00101111
+    Choices:
+    - Text: 225
+      Answer: 0
+    - Text: 116
+      Answer: 0
+    - Text: 47
+      Answer: 1
+    - Text: 222
+      Answer: 0
+    Expanding: 0
+  - Text: 00110000
+    Choices:
+    - Text: 102
+      Answer: 0
+    - Text: 48
+      Answer: 1
+    - Text: 25
+      Answer: 0
+    - Text: 128
+      Answer: 0
+    Expanding: 0
+  - Text: 00110001
+    Choices:
+    - Text: 49
+      Answer: 1
+    - Text: 189
+      Answer: 0
+    - Text: 134
+      Answer: 0
+    - Text: 78
+      Answer: 0
+    Expanding: 0
+  - Text: 00110010
+    Choices:
+    - Text: 25
+      Answer: 0
+    - Text: 119
+      Answer: 0
+    - Text: 50
+      Answer: 1
+    - Text: 52
+      Answer: 0
+    Expanding: 0
+  - Text: 00110011
+    Choices:
+    - Text: 51
+      Answer: 1
+    - Text: 40
+      Answer: 0
+    - Text: 225
+      Answer: 0
+    - Text: 27
+      Answer: 0
+    Expanding: 0
+  - Text: 00110100
+    Choices:
+    - Text: 222
+      Answer: 0
+    - Text: 244
+      Answer: 0
+    - Text: 52
+      Answer: 1
+    - Text: 94
+      Answer: 0
+    Expanding: 0
+  - Text: 00110101
+    Choices:
+    - Text: 174
+      Answer: 0
+    - Text: 145
+      Answer: 0
+    - Text: 150
+      Answer: 0
+    - Text: 53
+      Answer: 1
+    Expanding: 0
+  - Text: 00110110
+    Choices:
+    - Text: 14
+      Answer: 0
+    - Text: 54
+      Answer: 1
+    - Text: 217
+      Answer: 0
+    - Text: 103
+      Answer: 0
+    Expanding: 0
+  - Text: 00110111
+    Choices:
+    - Text: 148
+      Answer: 0
+    - Text: 55
+      Answer: 1
+    - Text: 133
+      Answer: 0
+    - Text: 240
+      Answer: 0
+    Expanding: 0
+  - Text: 00111000
+    Choices:
+    - Text: 117
+      Answer: 0
+    - Text: 186
+      Answer: 0
+    - Text: 56
+      Answer: 1
+    - Text: 82
+      Answer: 0
+    Expanding: 0
+  - Text: 00111001
+    Choices:
+    - Text: 57
+      Answer: 1
+    - Text: 134
+      Answer: 0
+    - Text: 224
+      Answer: 0
+    - Text: 113
+      Answer: 0
+    Expanding: 0
+  - Text: 00111010
+    Choices:
+    - Text: 58
+      Answer: 1
+    - Text: 159
+      Answer: 0
+    - Text: 240
+      Answer: 0
+    - Text: 32
+      Answer: 0
+    Expanding: 0
+  - Text: 00111011
+    Choices:
+    - Text: 45
+      Answer: 0
+    - Text: 141
+      Answer: 0
+    - Text: 163
+      Answer: 0
+    - Text: 59
+      Answer: 1
+    Expanding: 0
+  - Text: 00111100
+    Choices:
+    - Text: 60
+      Answer: 1
+    - Text: 144
+      Answer: 0
+    - Text: 187
+      Answer: 0
+    - Text: 215
+      Answer: 0
+    Expanding: 0
+  - Text: 00111101
+    Choices:
+    - Text: 61
+      Answer: 1
+    - Text: 43
+      Answer: 0
+    - Text: 123
+      Answer: 0
+    - Text: 252
+      Answer: 0
+    Expanding: 0
+  - Text: 00111110
+    Choices:
+    - Text: 62
+      Answer: 1
+    - Text: 5
+      Answer: 0
+    - Text: 100
+      Answer: 0
+    - Text: 66
+      Answer: 0
+    Expanding: 0
+  - Text: 00111111
+    Choices:
+    - Text: 231
+      Answer: 0
+    - Text: 27
+      Answer: 0
+    - Text: 127
+      Answer: 0
+    - Text: 63
+      Answer: 1
+    Expanding: 0
+  - Text: 01000000
+    Choices:
+    - Text: 166
+      Answer: 0
+    - Text: 247
+      Answer: 0
+    - Text: 225
+      Answer: 0
+    - Text: 64
+      Answer: 1
+    Expanding: 0
+  - Text: 01000001
+    Choices:
+    - Text: 227
+      Answer: 0
+    - Text: 170
+      Answer: 0
+    - Text: 245
+      Answer: 0
+    - Text: 65
+      Answer: 1
+    Expanding: 0
+  - Text: 01000010
+    Choices:
+    - Text: 199
+      Answer: 0
+    - Text: 66
+      Answer: 1
+    - Text: 253
+      Answer: 0
+    - Text: 126
+      Answer: 0
+    Expanding: 0
+  - Text: 01000011
+    Choices:
+    - Text: 67
+      Answer: 1
+    - Text: 201
+      Answer: 0
+    - Text: 175
+      Answer: 0
+    - Text: 117
+      Answer: 0
+    Expanding: 0
+  - Text: 01000100
+    Choices:
+    - Text: 25
+      Answer: 0
+    - Text: 72
+      Answer: 0
+    - Text: 68
+      Answer: 1
+    - Text: 90
+      Answer: 0
+    Expanding: 0
+  - Text: 01000101
+    Choices:
+    - Text: 178
+      Answer: 0
+    - Text: 88
+      Answer: 0
+    - Text: 133
+      Answer: 0
+    - Text: 69
+      Answer: 1
+    Expanding: 0
+  - Text: 01000110
+    Choices:
+    - Text: 46
+      Answer: 0
+    - Text: 171
+      Answer: 0
+    - Text: 70
+      Answer: 1
+    - Text: 169
+      Answer: 0
+    Expanding: 0
+  - Text: 01000111
+    Choices:
+    - Text: 50
+      Answer: 0
+    - Text: 71
+      Answer: 1
+    - Text: 27
+      Answer: 0
+    - Text: 137
+      Answer: 0
+    Expanding: 0
+  - Text: 01001000
+    Choices:
+    - Text: 161
+      Answer: 0
+    - Text: 72
+      Answer: 1
+    - Text: 27
+      Answer: 0
+    - Text: 241
+      Answer: 0
+    Expanding: 0
+  - Text: 01001001
+    Choices:
+    - Text: 171
+      Answer: 0
+    - Text: 73
+      Answer: 1
+    - Text: 98
+      Answer: 0
+    - Text: 174
+      Answer: 0
+    Expanding: 0
+  - Text: 01001010
+    Choices:
+    - Text: 126
+      Answer: 0
+    - Text: 74
+      Answer: 1
+    - Text: 255
+      Answer: 0
+    - Text: 145
+      Answer: 0
+    Expanding: 0
+  - Text: 01001011
+    Choices:
+    - Text: 156
+      Answer: 0
+    - Text: 75
+      Answer: 1
+    - Text: 252
+      Answer: 0
+    - Text: 76
+      Answer: 0
+    Expanding: 0
+  - Text: 01001100
+    Choices:
+    - Text: 51
+      Answer: 0
+    - Text: 90
+      Answer: 0
+    - Text: 192
+      Answer: 0
+    - Text: 76
+      Answer: 1
+    Expanding: 0
+  - Text: 01001101
+    Choices:
+    - Text: 132
+      Answer: 0
+    - Text: 13
+      Answer: 0
+    - Text: 77
+      Answer: 1
+    - Text: 218
+      Answer: 0
+    Expanding: 0
+  - Text: 01001110
+    Choices:
+    - Text: 78
+      Answer: 1
+    - Text: 136
+      Answer: 0
+    - Text: 120
+      Answer: 0
+    - Text: 231
+      Answer: 0
+    Expanding: 0
+  - Text: 01001111
+    Choices:
+    - Text: 15
+      Answer: 0
+    - Text: 46
+      Answer: 0
+    - Text: 79
+      Answer: 1
+    - Text: 84
+      Answer: 0
+    Expanding: 0
+  - Text: 01010000
+    Choices:
+    - Text: 132
+      Answer: 0
+    - Text: 80
+      Answer: 1
+    - Text: 112
+      Answer: 0
+    - Text: 108
+      Answer: 0
+    Expanding: 0
+  - Text: 01010001
+    Choices:
+    - Text: 81
+      Answer: 1
+    - Text: 62
+      Answer: 0
+    - Text: 50
+      Answer: 0
+    - Text: 60
+      Answer: 0
+    Expanding: 0
+  - Text: 01010010
+    Choices:
+    - Text: 82
+      Answer: 1
+    - Text: 97
+      Answer: 0
+    - Text: 201
+      Answer: 0
+    - Text: 222
+      Answer: 0
+    Expanding: 0
+  - Text: 01010011
+    Choices:
+    - Text: 89
+      Answer: 0
+    - Text: 7
+      Answer: 0
+    - Text: 150
+      Answer: 0
+    - Text: 83
+      Answer: 1
+    Expanding: 0
+  - Text: 01010100
+    Choices:
+    - Text: 43
+      Answer: 0
+    - Text: 84
+      Answer: 1
+    - Text: 136
+      Answer: 0
+    - Text: 178
+      Answer: 0
+    Expanding: 0
+  - Text: 01010101
+    Choices:
+    - Text: 164
+      Answer: 0
+    - Text: 218
+      Answer: 0
+    - Text: 85
+      Answer: 1
+    - Text: 88
+      Answer: 0
+    Expanding: 0
+  - Text: 01010110
+    Choices:
+    - Text: 225
+      Answer: 0
+    - Text: 184
+      Answer: 0
+    - Text: 208
+      Answer: 0
+    - Text: 86
+      Answer: 1
+    Expanding: 0
+  - Text: 01010111
+    Choices:
+    - Text: 138
+      Answer: 0
+    - Text: 57
+      Answer: 0
+    - Text: 87
+      Answer: 1
+    - Text: 38
+      Answer: 0
+    Expanding: 0
+  - Text: 01011000
+    Choices:
+    - Text: 9
+      Answer: 0
+    - Text: 88
+      Answer: 1
+    - Text: 182
+      Answer: 0
+    - Text: 129
+      Answer: 0
+    Expanding: 0
+  - Text: 01011001
+    Choices:
+    - Text: 98
+      Answer: 0
+    - Text: 89
+      Answer: 1
+    - Text: 155
+      Answer: 0
+    - Text: 197
+      Answer: 0
+    Expanding: 0
+  - Text: 01011010
+    Choices:
+    - Text: 90
+      Answer: 1
+    - Text: 253
+      Answer: 0
+    - Text: 201
+      Answer: 0
+    - Text: 193
+      Answer: 0
+    Expanding: 0
+  - Text: 01011011
+    Choices:
+    - Text: 46
+      Answer: 0
+    - Text: 153
+      Answer: 0
+    - Text: 235
+      Answer: 0
+    - Text: 91
+      Answer: 1
+    Expanding: 0
+  - Text: 01011100
+    Choices:
+    - Text: 217
+      Answer: 0
+    - Text: 92
+      Answer: 1
+    - Text: 35
+      Answer: 0
+    - Text: 48
+      Answer: 0
+    Expanding: 0
+  - Text: 01011101
+    Choices:
+    - Text: 93
+      Answer: 1
+    - Text: 6
+      Answer: 0
+    - Text: 131
+      Answer: 0
+    - Text: 57
+      Answer: 0
+    Expanding: 0
+  - Text: 01011110
+    Choices:
+    - Text: 174
+      Answer: 0
+    - Text: 94
+      Answer: 1
+    - Text: 125
+      Answer: 0
+    - Text: 112
+      Answer: 0
+    Expanding: 0
+  - Text: 01011111
+    Choices:
+    - Text: 95
+      Answer: 1
+    - Text: 118
+      Answer: 0
+    - Text: 28
+      Answer: 0
+    - Text: 129
+      Answer: 0
+    Expanding: 0
+  - Text: 01100000
+    Choices:
+    - Text: 135
+      Answer: 0
+    - Text: 165
+      Answer: 0
+    - Text: 155
+      Answer: 0
+    - Text: 96
+      Answer: 1
+    Expanding: 0
+  - Text: 01100001
+    Choices:
+    - Text: 35
+      Answer: 0
+    - Text: 176
+      Answer: 0
+    - Text: 97
+      Answer: 1
+    - Text: 105
+      Answer: 0
+    Expanding: 0
+  - Text: 01100010
+    Choices:
+    - Text: 66
+      Answer: 0
+    - Text: 211
+      Answer: 0
+    - Text: 98
+      Answer: 1
+    - Text: 114
+      Answer: 0
+    Expanding: 0
+  - Text: 01100011
+    Choices:
+    - Text: 85
+      Answer: 0
+    - Text: 147
+      Answer: 0
+    - Text: 196
+      Answer: 0
+    - Text: 99
+      Answer: 1
+    Expanding: 0
+  - Text: 01100100
+    Choices:
+    - Text: 100
+      Answer: 1
+    - Text: 38
+      Answer: 0
+    - Text: 104
+      Answer: 0
+    - Text: 230
+      Answer: 0
+    Expanding: 0
+  - Text: 01100101
+    Choices:
+    - Text: 145
+      Answer: 0
+    - Text: 163
+      Answer: 0
+    - Text: 186
+      Answer: 0
+    - Text: 101
+      Answer: 1
+    Expanding: 0
+  - Text: 01100110
+    Choices:
+    - Text: 102
+      Answer: 1
+    - Text: 136
+      Answer: 0
+    - Text: 12
+      Answer: 0
+    - Text: 207
+      Answer: 0
+    Expanding: 0
+  - Text: 01100111
+    Choices:
+    - Text: 43
+      Answer: 0
+    - Text: 48
+      Answer: 0
+    - Text: 22
+      Answer: 0
+    - Text: 103
+      Answer: 1
+    Expanding: 0
+  - Text: 01101000
+    Choices:
+    - Text: 47
+      Answer: 0
+    - Text: 104
+      Answer: 1
+    - Text: 220
+      Answer: 0
+    - Text: 35
+      Answer: 0
+    Expanding: 0
+  - Text: 01101001
+    Choices:
+    - Text: 105
+      Answer: 1
+    - Text: 254
+      Answer: 0
+    - Text: 233
+      Answer: 0
+    - Text: 218
+      Answer: 0
+    Expanding: 0
+  - Text: 01101010
+    Choices:
+    - Text: 66
+      Answer: 0
+    - Text: 106
+      Answer: 1
+    - Text: 236
+      Answer: 0
+    - Text: 229
+      Answer: 0
+    Expanding: 0
+  - Text: 01101011
+    Choices:
+    - Text: 107
+      Answer: 1
+    - Text: 24
+      Answer: 0
+    - Text: 222
+      Answer: 0
+    - Text: 167
+      Answer: 0
+    Expanding: 0
+  - Text: 01101100
+    Choices:
+    - Text: 108
+      Answer: 1
+    - Text: 220
+      Answer: 0
+    - Text: 130
+      Answer: 0
+    - Text: 217
+      Answer: 0
+    Expanding: 0
+  - Text: 01101101
+    Choices:
+    - Text: 30
+      Answer: 0
+    - Text: 234
+      Answer: 0
+    - Text: 109
+      Answer: 1
+    - Text: 71
+      Answer: 0
+    Expanding: 0
+  - Text: 01101110
+    Choices:
+    - Text: 139
+      Answer: 0
+    - Text: 216
+      Answer: 0
+    - Text: 175
+      Answer: 0
+    - Text: 110
+      Answer: 1
+    Expanding: 0
+  - Text: 01101111
+    Choices:
+    - Text: 243
+      Answer: 0
+    - Text: 238
+      Answer: 0
+    - Text: 61
+      Answer: 0
+    - Text: 111
+      Answer: 1
+    Expanding: 0
+  - Text: 01110000
+    Choices:
+    - Text: 21
+      Answer: 0
+    - Text: 238
+      Answer: 0
+    - Text: 112
+      Answer: 1
+    - Text: 203
+      Answer: 0
+    Expanding: 0
+  - Text: 01110001
+    Choices:
+    - Text: 113
+      Answer: 1
+    - Text: 77
+      Answer: 0
+    - Text: 72
+      Answer: 0
+    - Text: 249
+      Answer: 0
+    Expanding: 0
+  - Text: 01110010
+    Choices:
+    - Text: 187
+      Answer: 0
+    - Text: 180
+      Answer: 0
+    - Text: 16
+      Answer: 0
+    - Text: 114
+      Answer: 1
+    Expanding: 0
+  - Text: 01110011
+    Choices:
+    - Text: 115
+      Answer: 1
+    - Text: 100
+      Answer: 0
+    - Text: 216
+      Answer: 0
+    - Text: 186
+      Answer: 0
+    Expanding: 0
+  - Text: 01110100
+    Choices:
+    - Text: 99
+      Answer: 0
+    - Text: 144
+      Answer: 0
+    - Text: 0
+      Answer: 0
+    - Text: 116
+      Answer: 1
+    Expanding: 0
+  - Text: 01110101
+    Choices:
+    - Text: 220
+      Answer: 0
+    - Text: 250
+      Answer: 0
+    - Text: 227
+      Answer: 0
+    - Text: 117
+      Answer: 1
+    Expanding: 0
+  - Text: 01110110
+    Choices:
+    - Text: 38
+      Answer: 0
+    - Text: 118
+      Answer: 1
+    - Text: 104
+      Answer: 0
+    - Text: 148
+      Answer: 0
+    Expanding: 0
+  - Text: 01110111
+    Choices:
+    - Text: 196
+      Answer: 0
+    - Text: 111
+      Answer: 0
+    - Text: 196
+      Answer: 0
+    - Text: 119
+      Answer: 1
+    Expanding: 0
+  - Text: 01111000
+    Choices:
+    - Text: 96
+      Answer: 0
+    - Text: 80
+      Answer: 0
+    - Text: 159
+      Answer: 0
+    - Text: 120
+      Answer: 1
+    Expanding: 0
+  - Text: 01111001
+    Choices:
+    - Text: 84
+      Answer: 0
+    - Text: 178
+      Answer: 0
+    - Text: 136
+      Answer: 0
+    - Text: 121
+      Answer: 1
+    Expanding: 0
+  - Text: 01111010
+    Choices:
+    - Text: 156
+      Answer: 0
+    - Text: 125
+      Answer: 0
+    - Text: 122
+      Answer: 1
+    - Text: 66
+      Answer: 0
+    Expanding: 0
+  - Text: 01111011
+    Choices:
+    - Text: 160
+      Answer: 0
+    - Text: 232
+      Answer: 0
+    - Text: 123
+      Answer: 1
+    - Text: 84
+      Answer: 0
+    Expanding: 0
+  - Text: 01111100
+    Choices:
+    - Text: 124
+      Answer: 1
+    - Text: 34
+      Answer: 0
+    - Text: 248
+      Answer: 0
+    - Text: 10
+      Answer: 0
+    Expanding: 0
+  - Text: 01111101
+    Choices:
+    - Text: 190
+      Answer: 0
+    - Text: 125
+      Answer: 1
+    - Text: 233
+      Answer: 0
+    - Text: 143
+      Answer: 0
+    Expanding: 0
+  - Text: 01111110
+    Choices:
+    - Text: 175
+      Answer: 0
+    - Text: 134
+      Answer: 0
+    - Text: 126
+      Answer: 1
+    - Text: 70
+      Answer: 0
+    Expanding: 0
+  - Text: 01111111
+    Choices:
+    - Text: 132
+      Answer: 0
+    - Text: 127
+      Answer: 1
+    - Text: 245
+      Answer: 0
+    - Text: 184
+      Answer: 0
+    Expanding: 0
+  - Text: 10000000
+    Choices:
+    - Text: 223
+      Answer: 0
+    - Text: 95
+      Answer: 0
+    - Text: 128
+      Answer: 1
+    - Text: 186
+      Answer: 0
+    Expanding: 0
+  - Text: 10000001
+    Choices:
+    - Text: 63
+      Answer: 0
+    - Text: 129
+      Answer: 1
+    - Text: 147
+      Answer: 0
+    - Text: 96
+      Answer: 0
+    Expanding: 0
+  - Text: 10000010
+    Choices:
+    - Text: 130
+      Answer: 1
+    - Text: 99
+      Answer: 0
+    - Text: 30
+      Answer: 0
+    - Text: 194
+      Answer: 0
+    Expanding: 0
+  - Text: 10000011
+    Choices:
+    - Text: 57
+      Answer: 0
+    - Text: 131
+      Answer: 1
+    - Text: 11
+      Answer: 0
+    - Text: 112
+      Answer: 0
+    Expanding: 0
+  - Text: 10000100
+    Choices:
+    - Text: 40
+      Answer: 0
+    - Text: 132
+      Answer: 1
+    - Text: 109
+      Answer: 0
+    - Text: 60
+      Answer: 0
+    Expanding: 0
+  - Text: 10000101
+    Choices:
+    - Text: 133
+      Answer: 1
+    - Text: 2
+      Answer: 0
+    - Text: 106
+      Answer: 0
+    - Text: 96
+      Answer: 0
+    Expanding: 0
+  - Text: 10000110
+    Choices:
+    - Text: 134
+      Answer: 1
+    - Text: 222
+      Answer: 0
+    - Text: 191
+      Answer: 0
+    - Text: 43
+      Answer: 0
+    Expanding: 0
+  - Text: 10000111
+    Choices:
+    - Text: 135
+      Answer: 1
+    - Text: 53
+      Answer: 0
+    - Text: 206
+      Answer: 0
+    - Text: 100
+      Answer: 0
+    Expanding: 0
+  - Text: 10001000
+    Choices:
+    - Text: 16
+      Answer: 0
+    - Text: 58
+      Answer: 0
+    - Text: 202
+      Answer: 0
+    - Text: 136
+      Answer: 1
+    Expanding: 0
+  - Text: 10001001
+    Choices:
+    - Text: 62
+      Answer: 0
+    - Text: 32
+      Answer: 0
+    - Text: 137
+      Answer: 1
+    - Text: 4
+      Answer: 0
+    Expanding: 0
+  - Text: 10001010
+    Choices:
+    - Text: 84
+      Answer: 0
+    - Text: 6
+      Answer: 0
+    - Text: 138
+      Answer: 1
+    - Text: 174
+      Answer: 0
+    Expanding: 0
+  - Text: 10001011
+    Choices:
+    - Text: 6
+      Answer: 0
+    - Text: 173
+      Answer: 0
+    - Text: 139
+      Answer: 1
+    - Text: 210
+      Answer: 0
+    Expanding: 0
+  - Text: 10001100
+    Choices:
+    - Text: 140
+      Answer: 1
+    - Text: 8
+      Answer: 0
+    - Text: 205
+      Answer: 0
+    - Text: 108
+      Answer: 0
+    Expanding: 0
+  - Text: 10001101
+    Choices:
+    - Text: 182
+      Answer: 0
+    - Text: 125
+      Answer: 0
+    - Text: 155
+      Answer: 0
+    - Text: 141
+      Answer: 1
+    Expanding: 0
+  - Text: 10001110
+    Choices:
+    - Text: 218
+      Answer: 0
+    - Text: 235
+      Answer: 0
+    - Text: 242
+      Answer: 0
+    - Text: 142
+      Answer: 1
+    Expanding: 0
+  - Text: 10001111
+    Choices:
+    - Text: 143
+      Answer: 1
+    - Text: 89
+      Answer: 0
+    - Text: 84
+      Answer: 0
+    - Text: 15
+      Answer: 0
+    Expanding: 0
+  - Text: 10010000
+    Choices:
+    - Text: 84
+      Answer: 0
+    - Text: 110
+      Answer: 0
+    - Text: 25
+      Answer: 0
+    - Text: 144
+      Answer: 1
+    Expanding: 0
+  - Text: 10010001
+    Choices:
+    - Text: 36
+      Answer: 0
+    - Text: 145
+      Answer: 1
+    - Text: 233
+      Answer: 0
+    - Text: 74
+      Answer: 0
+    Expanding: 0
+  - Text: 10010010
+    Choices:
+    - Text: 14
+      Answer: 0
+    - Text: 240
+      Answer: 0
+    - Text: 146
+      Answer: 1
+    - Text: 104
+      Answer: 0
+    Expanding: 0
+  - Text: 10010011
+    Choices:
+    - Text: 32
+      Answer: 0
+    - Text: 147
+      Answer: 1
+    - Text: 75
+      Answer: 0
+    - Text: 148
+      Answer: 0
+    Expanding: 0
+  - Text: 10010100
+    Choices:
+    - Text: 148
+      Answer: 1
+    - Text: 26
+      Answer: 0
+    - Text: 165
+      Answer: 0
+    - Text: 240
+      Answer: 0
+    Expanding: 0
+  - Text: 10010101
+    Choices:
+    - Text: 22
+      Answer: 0
+    - Text: 1
+      Answer: 0
+    - Text: 71
+      Answer: 0
+    - Text: 149
+      Answer: 1
+    Expanding: 0
+  - Text: 10010110
+    Choices:
+    - Text: 227
+      Answer: 0
+    - Text: 201
+      Answer: 0
+    - Text: 150
+      Answer: 1
+    - Text: 116
+      Answer: 0
+    Expanding: 0
