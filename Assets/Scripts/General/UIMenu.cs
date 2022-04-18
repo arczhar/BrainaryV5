@@ -15,7 +15,22 @@ public class UIMenu : MonoBehaviour
     public TextBox textTotalLose;
     public TextBox textScore;
 
+    public GameObject btnChangeAvatar;
+
     public GameObject pvpPanel;
+    public GameObject mainMenuPanel;
+    public GameObject profilePanel;
+    public GameObject settingsPanel;
+    public GameObject panelHowToPlay;
+    public GameObject panelQuitPopUp;
+    public GameObject panelCreditPopUp;
+
+    public GameObject soundOffIcon;
+    public GameObject soundOnIcon;
+
+
+
+    private bool muted = false;
 
     void Start()
     {
@@ -28,10 +43,21 @@ public class UIMenu : MonoBehaviour
         OnPopupAvatarCallback(true);
         NetworkIO.Auth();
 
-        FetchStats();
+        //FetchStats();
 
         
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            //panelMainMenu.SetActive(true);
+            panelQuitPopUp.SetActive(false);
+            panelCreditPopUp.SetActive(false);
+            panelHowToPlay.SetActive(false);
+        }
     }
 
     void FetchStats()
@@ -76,4 +102,119 @@ public class UIMenu : MonoBehaviour
         pvpPanel.SetActive(true);
         FetchStats();
     }
+
+    public void onClickProfile()
+    {
+
+        btnChangeAvatar.SetActive(true);
+        mainMenuPanel.SetActive(false);
+        pvpPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        profilePanel.SetActive(true);
+
+    }
+
+    public void onClickMainMenu()
+    {
+        Debug.Log("Clicke!");
+        btnChangeAvatar.SetActive(false);
+        profilePanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        pvpPanel.SetActive(false);
+        panelQuitPopUp.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+
+
+    public void onClickSettings()
+    {
+        btnChangeAvatar.SetActive(false);
+        mainMenuPanel.SetActive(false);
+        pvpPanel.SetActive(false);
+        profilePanel.SetActive(false);
+        panelCreditPopUp.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
+    
+    public void OnButtonPress()
+    {
+        if (muted == false)
+        {
+            muted = true;
+            AudioListener.pause = true;
+
+        }
+
+        else
+        {
+            muted = false;
+            AudioListener.pause = false;
+        }
+
+        Save();
+        UpdateIconBtn();
+    }
+    
+    private void Load()
+    {
+        muted = PlayerPrefs.GetInt("muted") == 1;
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+    }
+
+    private void UpdateIconBtn()
+    {
+
+        if (muted == false)
+        {
+            soundOnIcon.SetActive(true);
+            soundOffIcon.SetActive(false);
+        }
+
+        else
+        {
+            soundOnIcon.SetActive(false);
+            soundOffIcon.SetActive(true);
+        }
+    } 
+
+    public void onClickClassic()
+    {
+
+    }
+
+    public void showQuit()
+    {
+        panelQuitPopUp.SetActive(true);
+    }
+
+    public void onClickQuit()
+    {
+        Application.Quit();
+        Debug.Log("QUIT");
+    }
+
+    public void onClickShowCredits()
+    {
+        panelCreditPopUp.SetActive(true);
+    }
+
+    public void OnclickText()
+    {
+        panelHowToPlay.SetActive(true);
+
+    }
+
+
+
+
+
+
+
+
+
 }
