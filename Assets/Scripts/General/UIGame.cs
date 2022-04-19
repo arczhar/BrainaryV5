@@ -15,6 +15,7 @@ public class UIGame : MonoBehaviour
     public TextBox questionText;
     public TextBox valueOfText;
 
+    public GameObject LoadingScreen;
     public GameObject groupAnswer;
     public GameObject prefabAnswer;
 
@@ -23,10 +24,14 @@ public class UIGame : MonoBehaviour
 
     [Header("Player Stats")]
     public Image ownerAvatar;
+    public Image ownerAvatarT;
+    public TextBox ownerName;
     private Sprite originOwnerSprite;
     public Image opponentAvatar;
+    public Image oppnentAvatarT;
     private Sprite originOpponentSprite;
     public TextBox opponentName;
+    public TextBox oppnentNameT;
 
     public TextBox ownerScore;
     public TextBox opponentScore;
@@ -53,8 +58,24 @@ public class UIGame : MonoBehaviour
         StartCoroutine(CoroutineEmoticon());
 
         NetworkIO.Send("MSG:READY");
+        StartCoroutine(showGameUI());
+        FetchDaTA();
+        
     }
 
+    IEnumerator showGameUI()
+    {
+        yield return new WaitForSeconds(2);
+        LoadingScreen.SetActive(false);
+
+    }
+
+    public void FetchDaTA()
+    {
+      
+
+
+    }
 
 
     public void SetQuestion(string _valueOf, Question _question)
@@ -92,11 +113,15 @@ public class UIGame : MonoBehaviour
     {
         originOwnerSprite = GlobalVariable.Avatar.AvatarImage;
         originOpponentSprite = GlobalVariable.GetAvatarByID(int.Parse(_icon)).AvatarImage;
+        ownerName.text = GlobalVariable.AvatarName;
 
         ownerAvatar.sprite = originOwnerSprite;
+        ownerAvatarT.sprite = originOwnerSprite;
         opponentAvatar.sprite = originOpponentSprite;
+        oppnentAvatarT.sprite = originOpponentSprite;
 
         opponentName.text = _name;
+        oppnentNameT.text = _name;
     }
 
     public void SetTimeAnswer(float _value, float _factor)
