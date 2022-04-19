@@ -116,7 +116,6 @@ public class UIMenu : MonoBehaviour
 
     public void onClickMainMenu()
     {
-        Debug.Log("Clicke!");
         btnChangeAvatar.SetActive(false);
         profilePanel.SetActive(false);
         settingsPanel.SetActive(false);
