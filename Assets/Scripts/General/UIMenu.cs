@@ -14,6 +14,7 @@ public class UIMenu : MonoBehaviour
     public TextBox textTotalWin;
     public TextBox textTotalLose;
     public TextBox textScore;
+    public TextBox preTestScore;
 
     public GameObject btnChangeAvatar;
 
@@ -24,6 +25,7 @@ public class UIMenu : MonoBehaviour
     public GameObject panelHowToPlay;
     public GameObject panelQuitPopUp;
     public GameObject panelCreditPopUp;
+    public GameObject panelPreTest;
 
     public GameObject soundOffIcon;
     public GameObject soundOnIcon;
@@ -34,17 +36,33 @@ public class UIMenu : MonoBehaviour
 
     void Start()
     {
+        showTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
+            
         }
-
 
         OnPopupAvatarCallback(true);
         NetworkIO.Auth();
+        FetchStats();
 
-        //FetchStats();
+  
+    }
 
+    public void showTest()
+    {
+        if (string.IsNullOrEmpty(GlobalVariable.PreTest))
+        {
+            panelPreTest.SetActive(true);
+        }
+    }
+
+    public void onClickStart()
+    {
+
+        
+        panelPreTest.SetActive(false);
         
 
     }
@@ -66,6 +84,7 @@ public class UIMenu : MonoBehaviour
         textTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
         textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
         textScore.text = string.Format("{0}", GlobalVariable.TotalScore);
+        preTestScore.text = string.Format("", GlobalVariable.PreTest);
     }
 
     public void OnClickAvatar()
@@ -124,7 +143,6 @@ public class UIMenu : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
-
     public void onClickSettings()
     {
         btnChangeAvatar.SetActive(false);
@@ -134,8 +152,7 @@ public class UIMenu : MonoBehaviour
         panelCreditPopUp.SetActive(false);
         settingsPanel.SetActive(true);
     }
-
-    
+ 
     public void OnButtonPress()
     {
         if (muted == false)
@@ -207,13 +224,6 @@ public class UIMenu : MonoBehaviour
         panelHowToPlay.SetActive(true);
 
     }
-
-
-
-
-
-
-
 
 
 }

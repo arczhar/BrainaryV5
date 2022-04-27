@@ -10,6 +10,9 @@ public class PopupGameOver : Popup
     public Sprite spriteWin;
     public Sprite spriteLose;
     public TextBox textScore;
+    public TextBox result;
+    //public TextBox plus;
+    //public TextBox minus;
 
     public GameObject panelReason;
 
@@ -19,6 +22,7 @@ public class PopupGameOver : Popup
 
         winText.text = (bool)Params[0] ? "You Win!" : "You Lose!";
         Throphy.sprite = (bool)Params[0] ? spriteWin : spriteLose;
+        result.text = (bool)Params[0] ? "+25" : "-25";
         panelReason.SetActive((bool)Params[1]);
         textScore.text = Params[2].ToString();
     }

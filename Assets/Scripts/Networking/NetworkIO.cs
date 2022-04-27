@@ -257,14 +257,14 @@ public class NetworkIO : Singleton<NetworkIO>
                     if (IamWinner)
                     {
                         GlobalVariable.TotalWin += 1;
-                        GlobalVariable.TotalScore += m.GetInt(1);
+                        GlobalVariable.TotalScore += +25;
                     }
                     else
                     {
                         GlobalVariable.TotalLose += 1;
                     }
 
-                    int score = IamWinner ? m.GetInt(1) : 0;
+                    int score = IamWinner ? m.GetInt(1) : GlobalVariable.TotalScore += -25;
 
                     Popup.Show("UI", "PopupGameOver", PopupButton.Yes, OnPopupContinue, IamWinner, m.GetBoolean(2), score);
                     Disconnect();
