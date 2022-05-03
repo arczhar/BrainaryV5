@@ -26,6 +26,7 @@ public class UIGame : MonoBehaviour
     public Image ownerAvatar;
     public Image ownerAvatarT;
     public TextBox ownerName;
+    public TextBox ownerMMR;
     private Sprite originOwnerSprite;
     public Image opponentAvatar;
     public Image oppnentAvatarT;
@@ -111,17 +112,20 @@ public class UIGame : MonoBehaviour
 
     public void SetOpponentData(string _name, string _icon)
     {
-        originOwnerSprite = GlobalVariable.Avatar.AvatarImage;
+        originOwnerSprite = GlobalVariable.Avatar.AvatarImage;//Player Owner
         originOpponentSprite = GlobalVariable.GetAvatarByID(int.Parse(_icon)).AvatarImage;
-        ownerName.text = GlobalVariable.AvatarName;
+        ownerName.text = GlobalVariable.AvatarName;//Player Owner
+        ownerMMR.text = string.Format("{0}", GlobalVariable.TotalScore);
 
         ownerAvatar.sprite = originOwnerSprite;
-        ownerAvatarT.sprite = originOwnerSprite;
+        ownerAvatarT.sprite = originOwnerSprite;//Player Owner
         opponentAvatar.sprite = originOpponentSprite;
-        oppnentAvatarT.sprite = originOpponentSprite;
+        oppnentAvatarT.sprite = originOpponentSprite;//Player Owner
 
         opponentName.text = _name;
-        oppnentNameT.text = _name;
+        oppnentNameT.text = _name;//Player Owner
+
+
     }
 
     public void SetTimeAnswer(float _value, float _factor)

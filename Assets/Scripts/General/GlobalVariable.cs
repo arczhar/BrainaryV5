@@ -19,12 +19,18 @@ public class GlobalVariable : Singleton<GlobalVariable>
     }
 
 
-    public static string PreTest
+    public static string PreTestScore
     {
         get { return PlayerPrefs.GetString("AvatarName", ""); }
         set { PlayerPrefs.SetString("AvatarName", value); }
     }
-    
+
+    public static string PostTestScore
+    {
+        get { return PlayerPrefs.GetString("AvatarName", ""); }
+        set { PlayerPrefs.SetString("AvatarName", value); }
+    }
+
     public static int AvatarID
     {
         get { return PlayerPrefs.GetInt("AvatarID", 0); }
