@@ -7,6 +7,8 @@ public class Pretest : MonoBehaviour
 
     public GameObject intructionF;
     public GameObject instructionS;
+    public GameObject testPanel;
+
 
 
 
@@ -15,6 +17,14 @@ public class Pretest : MonoBehaviour
         intructionF.SetActive(false);
         instructionS.SetActive(true);
         
+    }
+
+    public void showTest()
+    {
+        intructionF.SetActive(false);
+        instructionS.SetActive(false);
+        testPanel.SetActive(true);
+
     }
     
 }
