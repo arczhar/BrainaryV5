@@ -18,7 +18,7 @@ public class AnswerScript : MonoBehaviour
         else
         {
             Debug.Log("Wrong");
-            pretestManager.correct();
+            pretestManager.wrong();
         }
     }
 }

@@ -28,12 +28,13 @@ public class UIMenu : MonoBehaviour
     public GameObject panelQuitPopUp;
     public GameObject panelCreditPopUp;
     public GameObject panelPreTest;
+    public GameObject panelPostTest;
     public GameObject panelAvatar;
 
     public GameObject soundOffIcon;
     public GameObject soundOnIcon;
 
-    public GameObject surveybtn;
+   
 
 
     private bool muted = false;
@@ -45,7 +46,7 @@ public class UIMenu : MonoBehaviour
         {
 
             //panelPreTest.SetActive(true);
-            surveybtn.SetActive(true);
+           // panelPostTest.SetActive(true);
         }
     }
 

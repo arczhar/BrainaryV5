@@ -10,25 +10,46 @@ public class PreTestManager : MonoBehaviour
     public GameObject intructionF;
     public GameObject instructionS;
     public GameObject testPanel;
+    public GameObject resultPanel;
 
 
 
     public List<QuestionAndAnswer> QnA;
     public GameObject[] options;
-    public int currentQuestions; 
+    public int currentQuestions;
+
+    public int score;
 
     public Text QuestionTxt;
+    public TMP_Text ScoreText;
+
+    int totalQuestion = 0;
 
     public void Start()
     {
+        ScoreText.text = score + "" ;
+        totalQuestion = QnA.Count;
         generateQuestion();
     }
 
     public void correct()
     {
+        score += 1;
         QnA.RemoveAt(currentQuestions);
         generateQuestion();
     }
+
+    public void wrong()
+    {
+        QnA.RemoveAt(currentQuestions);
+        generateQuestion();
+    }
+
+     void testDone()
+     {
+        testPanel.SetActive(false);
+        resultPanel.SetActive(true);
+     }
 
     void SetAnswer()
     {
@@ -56,7 +77,8 @@ public class PreTestManager : MonoBehaviour
 
         else
         {
-            Debug.Log("Quiz Done");
+            //Debug.Log("Quiz Done");
+            testDone();
         }
         
 
