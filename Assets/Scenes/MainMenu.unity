@@ -11147,27 +11147,356 @@ MonoBehaviour:
   testPanel: {fileID: 1851894579}
   resultPanel: {fileID: 925154428}
   QnA:
-  - Question: 5 + 1
+  - Question: 0
     Answer:
-    - 6
-    - 2
-    - 3
-    - 5
+    - 0000
+    - 0101
+    - 1100
+    - 1001
     CorrectAnswer: 1
-  - Question: 5 + 5
+  - Question: 1
     Answer:
-    - 20
-    - 10
-    - 32
-    - 55
+    - 1100
+    - 0001
+    - 0011
+    - 1110
     CorrectAnswer: 2
-  - Question: 4 + 4
+  - Question: 2
+    Answer:
+    - 1000
+    - 0001
+    - 0010
+    - 0111
+    CorrectAnswer: 3
+  - Question: 3
+    Answer:
+    - 1001
+    - 1101
+    - 0011
+    - 0000
+    CorrectAnswer: 3
+  - Question: 4
+    Answer:
+    - 1100
+    - 0100
+    - 0010
+    - 1101
+    CorrectAnswer: 2
+  - Question: 5
+    Answer:
+    - 0101
+    - 1100
+    - 1001
+    - 1010
+    CorrectAnswer: 1
+  - Question: 6
+    Answer:
+    - 0100
+    - 0110
+    - 1100
+    - 0000
+    CorrectAnswer: 2
+  - Question: 7
+    Answer:
+    - 1001
+    - 1100
+    - 1111
+    - 0111
+    CorrectAnswer: 4
+  - Question: 1000
     Answer:
     - 5
     - 3
     - 8
     - 1
     CorrectAnswer: 3
+  - Question: 1001
+    Answer:
+    - 9
+    - 2
+    - 8
+    - 5
+    CorrectAnswer: 1
+  - Question: 1010
+    Answer:
+    - 2
+    - 11
+    - 8
+    - 10
+    CorrectAnswer: 4
+  - Question: 1011
+    Answer:
+    - 10
+    - 11
+    - 9
+    - 1
+    CorrectAnswer: 2
+  - Question: 1100
+    Answer:
+    - 0
+    - 9
+    - 11
+    - 12
+    CorrectAnswer: 4
+  - Question: 1101
+    Answer:
+    - 11
+    - 13
+    - 5
+    - 1
+    CorrectAnswer: 2
+  - Question: 1110
+    Answer:
+    - 3
+    - 11
+    - 14
+    - 8
+    CorrectAnswer: 3
+  - Question: 1111
+    Answer:
+    - 11
+    - 7
+    - 1
+    - 15
+    CorrectAnswer: 4
+  - Question: 1
+    Answer:
+    - 000001
+    - 110001
+    - 001000
+    - 011000
+    CorrectAnswer: 1
+  - Question: 2
+    Answer:
+    - 111010
+    - 000010
+    - 000011
+    - 100011
+    CorrectAnswer: 2
+  - Question: 3
+    Answer:
+    - 100001
+    - 001100
+    - 110000
+    - 000011
+    CorrectAnswer: 4
+  - Question: 4
+    Answer:
+    - 100000
+    - 000100
+    - 010010
+    - 111000
+    CorrectAnswer: 2
+  - Question: 5
+    Answer:
+    - 001010
+    - 101000
+    - 110011
+    - 000101
+    CorrectAnswer: 4
+  - Question: 6
+    Answer:
+    - 000110
+    - 011000
+    - 110001
+    - 111000
+    CorrectAnswer: 1
+  - Question: 7
+    Answer:
+    - 000111
+    - 111000
+    - 001110
+    - 111001
+    CorrectAnswer: 1
+  - Question: 8
+    Answer:
+    - 001001
+    - 001000
+    - 100011
+    - 101010
+    CorrectAnswer: 2
+  - Question: 001111
+    Answer:
+    - 32
+    - 15
+    - 12
+    - 23
+    CorrectAnswer: 2
+  - Question: 010000
+    Answer:
+    - 22
+    - 19
+    - 16
+    - 14
+    CorrectAnswer: 3
+  - Question: 010001
+    Answer:
+    - 17
+    - 27
+    - 11
+    - 7
+    CorrectAnswer: 1
+  - Question: 010100
+    Answer:
+    - 12
+    - 20
+    - 2
+    - 22
+    CorrectAnswer: 2
+  - Question: 011001
+    Answer:
+    - 19
+    - 10
+    - 12
+    - 25
+    CorrectAnswer: 4
+  - Question: 011100
+    Answer:
+    - 32
+    - 28
+    - 3
+    - 30
+    CorrectAnswer: 2
+  - Question: 011110
+    Answer:
+    - 7
+    - 30
+    - 4
+    - 10
+    CorrectAnswer: 2
+  - Question: 100000
+    Answer:
+    - 32
+    - 12
+    - 22
+    - 17
+    CorrectAnswer: 1
+  - Question: 1
+    Answer:
+    - 11100001
+    - 00110011
+    - 00000001
+    - 10000001
+    CorrectAnswer: 3
+  - Question: 4
+    Answer:
+    - 00000100
+    - 01000000
+    - 00001000
+    - 00100100
+    CorrectAnswer: 1
+  - Question: 6
+    Answer:
+    - 11000000
+    - 00000110
+    - 00000111
+    - 00110011
+    CorrectAnswer: 2
+  - Question: 8
+    Answer:
+    - 00110000
+    - 10001000
+    - 10000000
+    - 00001000
+    CorrectAnswer: 4
+  - Question: 15
+    Answer:
+    - 00111100
+    - 00001111
+    - 00011110
+    - 00100011
+    CorrectAnswer: 2
+  - Question: 18
+    Answer:
+    - 00010011
+    - 10001111
+    - 11001111
+    - 00010010
+    CorrectAnswer: 4
+  - Question: 20
+    Answer:
+    - 00010100
+    - 00110010
+    - 11000110
+    - 00101001
+    CorrectAnswer: 1
+  - Question: 30
+    Answer:
+    - 11100001
+    - 00011110
+    - 10001001
+    - 11100001
+    CorrectAnswer: 2
+  - Question: 00000010
+    Answer:
+    - 1
+    - 23
+    - 2
+    - 10
+    CorrectAnswer: 3
+  - Question: 00000101
+    Answer:
+    - 5
+    - 25
+    - 2
+    - 10
+    CorrectAnswer: 1
+  - Question: 00001101
+    Answer:
+    - 3
+    - 23
+    - 13
+    - 33
+    CorrectAnswer: 3
+  - Question: 00011001
+    Answer:
+    - 55
+    - 25
+    - 32
+    - 27
+    CorrectAnswer: 2
+  - Question: 00101000
+    Answer:
+    - 50
+    - 40
+    - 10
+    - 60
+    CorrectAnswer: 2
+  - Question: 00100011
+    Answer:
+    - 5
+    - 15
+    - 35
+    - 25
+    CorrectAnswer: 3
+  - Question: '00111100 '
+    Answer:
+    - 30
+    - 20
+    - 60
+    - 80
+    CorrectAnswer: 3
+  - Question: 01100100
+    Answer:
+    - 100
+    - 153
+    - 112
+    - 130
+    CorrectAnswer: 1
+  - Question: 10111111
+    Answer:
+    - 191
+    - 255
+    - 200
+    - 130
+    CorrectAnswer: 1
+  - Question: '11111111 '
+    Answer:
+    - 242
+    - 98
+    - 128
+    - 255
+    CorrectAnswer: 4
   options:
   - {fileID: 159732946}
   - {fileID: 2016324795}
