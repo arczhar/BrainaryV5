@@ -56,12 +56,19 @@ public class PreTestManager : MonoBehaviour
     {
         mmr = int.Parse(ScoreText.text);
 
-        if (mmr > 1)
+        if (mmr <= 10)
         {
-            mmrText.text = ("200");
-        }
+            mmrText.text = ("500");
+     
+        }      
 
-        
+    }
+
+    void saveMMR()
+    {
+
+        mmrText.text = string.Format("{0}", GlobalVariable.TotalScore);
+        //textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
     }
 
     void SetAnswer()
