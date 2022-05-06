@@ -18,16 +18,17 @@ public class PreTestManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestions;
 
-    public int score = 4;
+    public int mmr;
+    public int score;
+    int totalQuestion = 0;
 
     public Text QuestionTxt;
     public TMP_Text ScoreText;
-
-    int totalQuestion = 0;
-
+    public TMP_Text mmrText;
+   
     public void Start()
     {
-       // ScoreText.text = score + "" ;
+        
         totalQuestion = QnA.Count;
         generateQuestion();
     }
@@ -38,7 +39,6 @@ public class PreTestManager : MonoBehaviour
         QnA.RemoveAt(currentQuestions);
         generateQuestion();
     }
-
     public void wrong()
     {
         QnA.RemoveAt(currentQuestions);
@@ -48,9 +48,21 @@ public class PreTestManager : MonoBehaviour
      void testDone()
      {
         ScoreText.text = score + "";
+        calculateMMR();
         testPanel.SetActive(false);
         resultPanel.SetActive(true);
      }
+    void calculateMMR()
+    {
+        mmr = int.Parse(ScoreText.text);
+
+        if (mmr > 1)
+        {
+            mmrText.text = ("200");
+        }
+
+        
+    }
 
     void SetAnswer()
     {
