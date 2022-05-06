@@ -18,7 +18,7 @@ public class PreTestManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestions;
 
-    public int score;
+    public int score = 4;
 
     public Text QuestionTxt;
     public TMP_Text ScoreText;
@@ -27,7 +27,7 @@ public class PreTestManager : MonoBehaviour
 
     public void Start()
     {
-        ScoreText.text = score + "" ;
+       // ScoreText.text = score + "" ;
         totalQuestion = QnA.Count;
         generateQuestion();
     }
@@ -47,6 +47,7 @@ public class PreTestManager : MonoBehaviour
 
      void testDone()
      {
+        ScoreText.text = score + "";
         testPanel.SetActive(false);
         resultPanel.SetActive(true);
      }
@@ -80,9 +81,7 @@ public class PreTestManager : MonoBehaviour
             //Debug.Log("Quiz Done");
             testDone();
         }
-        
-
-        
+           
     }
 
 
