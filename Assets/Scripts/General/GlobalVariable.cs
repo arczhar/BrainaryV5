@@ -18,19 +18,6 @@ public class GlobalVariable : Singleton<GlobalVariable>
 
     }
 
-
-    public static string PreTestScore
-    {
-        get { return PlayerPrefs.GetString("AvatarName", ""); }
-        set { PlayerPrefs.SetString("AvatarName", value); }
-    }
-
-    public static string PostTestScore
-    {
-        get { return PlayerPrefs.GetString("AvatarName", ""); }
-        set { PlayerPrefs.SetString("AvatarName", value); }
-    }
-
     public static int AvatarID
     {
         get { return PlayerPrefs.GetInt("AvatarID", 0); }
@@ -66,6 +53,19 @@ public class GlobalVariable : Singleton<GlobalVariable>
     {
         get { return PlayerPrefs.GetInt("TotalScore", 0); }
         set { PlayerPrefs.SetInt("TotalScore", value); }
+
+    }
+
+    public static int PreTestScore
+    {
+        get { return PlayerPrefs.GetInt("PreTestScore", 0); }
+        set { PlayerPrefs.SetInt("PreTestScore", value); }
+    }
+
+    public static int PostTestScore
+    {
+        get { return PlayerPrefs.GetInt("PostTestScore", 0); }
+        set { PlayerPrefs.SetInt("PostTestScore", value); }
     }
 
     private int currentIndexQuestion;

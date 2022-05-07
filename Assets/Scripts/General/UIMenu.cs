@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 using System.Linq;
 
 public class UIMenu : MonoBehaviour
@@ -16,7 +17,7 @@ public class UIMenu : MonoBehaviour
     public TextBox textTotalWin;
     public TextBox textTotalLose;
     public TextBox textScore;
-    public TextBox preTestScore;
+    public TMP_Text preTestScore;
 
     public GameObject btnChangeAvatar;
 
@@ -30,6 +31,7 @@ public class UIMenu : MonoBehaviour
     public GameObject panelPreTest;
     public GameObject panelPostTest;
     public GameObject panelAvatar;
+    
 
     public GameObject soundOffIcon;
     public GameObject soundOnIcon;
@@ -42,12 +44,15 @@ public class UIMenu : MonoBehaviour
 
     void Awake()
     {
+            //MMR                              //TotalWar
         if (GlobalVariable.TotalScore == 25 || GlobalVariable.TotalWar == 2)
         {
 
             //panelPreTest.SetActive(true);
-           // panelPostTest.SetActive(true);
+            // panelPostTest.SetActive(true);
         }
+
+
     }
 
     void Start()
@@ -57,19 +62,17 @@ public class UIMenu : MonoBehaviour
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
             
-        }
-
+        } 
         OnPopupAvatarCallback(true);
         NetworkIO.Auth();
         FetchStats();
+        FetchScore();
 
-
-        
     }
 
-    public void showPanelPreTest()
+    void showPanelPreTest()
     {
-        if (string.IsNullOrEmpty(GlobalVariable.PreTestScore))
+        if (GlobalVariable.PreTestScore == 0)
         {
             panelPreTest.SetActive(true);
         }
@@ -82,6 +85,7 @@ public class UIMenu : MonoBehaviour
 
     void Update()
     {
+        
         if (Input.GetKey(KeyCode.Escape))
         {
             //panelMainMenu.SetActive(true);
@@ -97,7 +101,14 @@ public class UIMenu : MonoBehaviour
         textTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
         textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
         textScore.text = string.Format("{0}", GlobalVariable.TotalScore);
-        preTestScore.text = string.Format("", GlobalVariable.PreTestScore);
+        
+
+    }
+
+    void FetchScore()
+    {
+        
+        preTestScore.text = string.Format("{0} / 25", GlobalVariable.PreTestScore);
     }
 
     public void OnClickAvatar()
@@ -121,6 +132,9 @@ public class UIMenu : MonoBehaviour
     {
         AvatarName.text = GlobalVariable.AvatarName;
         AvatarImage.sprite = GlobalVariable.Avatar.AvatarImage;
+        AvatarNameT.text = GlobalVariable.AvatarName;
+        AvatarImageT.sprite = GlobalVariable.Avatar.AvatarImage;
+
     }
 
     void OnPopupCategoryCallback(bool _confirm)
@@ -133,22 +147,19 @@ public class UIMenu : MonoBehaviour
         
         pvpPanel.SetActive(true);
         FetchStats();
+
     }
 
     public void onClickProfile()
     {
-
+        
         btnChangeAvatar.SetActive(true);
         mainMenuPanel.SetActive(false);
         pvpPanel.SetActive(false);
         settingsPanel.SetActive(false);
         panelAvatar.SetActive(false); 
         profilePanel.SetActive(true);
-        
-
-        AvatarNameT.text = GlobalVariable.AvatarName;
-        AvatarImageT.sprite = GlobalVariable.Avatar.AvatarImage;
-
+        FetchScore();
     }
 
     public void onClickMainMenu()

@@ -11,6 +11,7 @@ public class PreTestManager : MonoBehaviour
     public GameObject instructionS;
     public GameObject testPanel;
     public GameObject resultPanel;
+    public GameObject panelPretest;
 
 
 
@@ -19,7 +20,9 @@ public class PreTestManager : MonoBehaviour
     public int currentQuestions;
 
     public int mmr;
+    public int finalmmr;
     public int score;
+    public int pretescore;
     int totalQuestion = 0;
 
     public Text QuestionTxt;
@@ -55,20 +58,28 @@ public class PreTestManager : MonoBehaviour
     void calculateMMR()
     {
         mmr = int.Parse(ScoreText.text);
+        
 
         if (mmr <= 10)
         {
             mmrText.text = ("500");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
      
-        }      
+        }
+        else
+        {
+            mmrText.text = ("1000");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
+        }
 
     }
 
-    void saveMMR()
+    public void saveMMR()
     {
-
-        mmrText.text = string.Format("{0}", GlobalVariable.TotalScore);
-        //textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
+        GlobalVariable.PreTestScore = score;
+        panelPretest.SetActive(false);  
     }
 
     void SetAnswer()
