@@ -87,12 +87,16 @@ public class PreTestManager : MonoBehaviour
         for (int i = 0; i < options.Length ; i++)
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
+            
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestions].Answer[i]; 
 
             if(QnA[currentQuestions].CorrectAnswer == i+1)
             {
+                
                 options[i].GetComponent<AnswerScript>().isCorrect = true;
+
             }
+            
         }
     }
 

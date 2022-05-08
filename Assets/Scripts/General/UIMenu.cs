@@ -76,6 +76,10 @@ public class UIMenu : MonoBehaviour
         {
             panelPreTest.SetActive(true);
         }
+        else
+        {
+            panelPreTest.SetActive(false);
+        }
     }
 
     public void onClickStart()
