@@ -58,34 +58,34 @@ public class PreTestManager : MonoBehaviour
         mmr = int.Parse(ScoreText.text);
 
 
-        if (mmr <= 50 && mmr > 40)
+        if (mmr <= 30 && mmr > 24)
         {
-            mmrText.text = ("1800");
+            mmrText.text = ("1400");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
 
         }
-        else if (mmr <= 40 && mmr > 30)
+        else if (mmr <= 24 && mmr > 16)
         {
-            mmrText.text = ("1500");
+            mmrText.text = ("1100");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
         }
-        else if (mmr <= 30 && mmr > 20)
+        else if (mmr <= 16 && mmr > 12)
         {
-            mmrText.text = ("1200");
+            mmrText.text = ("800");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
         }
-        else if (mmr <= 20 && mmr > 10)
-        {
-            mmrText.text = ("900");
-            finalmmr = int.Parse(mmrText.text);
-            GlobalVariable.TotalScore = finalmmr;
-        }
-        else if (mmr <= 10 && mmr > 0)
+        else if (mmr <= 12 && mmr > 6)
         {
             mmrText.text = ("500");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
+        }
+        else if (mmr <= 6 && mmr > 0)
+        {
+            mmrText.text = ("200");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
         }

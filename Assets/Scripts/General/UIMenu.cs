@@ -18,6 +18,7 @@ public class UIMenu : MonoBehaviour
     public TextBox textTotalLose;
     public TextBox textScore;
     public TMP_Text preTestScore;
+    public TMP_Text postTestScore;
 
     public GameObject btnChangeAvatar;
 
@@ -45,11 +46,13 @@ public class UIMenu : MonoBehaviour
     void Awake()
     {
             //MMR                              //TotalWar
-        if (GlobalVariable.TotalScore == 25 || GlobalVariable.TotalWar == 2)
+        if (GlobalVariable.TotalScore == 1500 || GlobalVariable.TotalWar == 1)
         {
-
-            //panelPreTest.SetActive(true);
-            // panelPostTest.SetActive(true);
+            panelPostTest.SetActive(true);
+        }
+        else
+        {
+            panelPostTest.SetActive(false);
         }
 
 
@@ -110,9 +113,9 @@ public class UIMenu : MonoBehaviour
     }
 
     void FetchScore()
-    {
-        
-        preTestScore.text = string.Format("{0} / 25", GlobalVariable.PreTestScore);
+    {       
+        preTestScore.text = string.Format("{0} / 30", GlobalVariable.PreTestScore);
+        postTestScore.text = string.Format("{0} / 30", GlobalVariable.PostTestScore);
     }
 
     public void OnClickAvatar()
