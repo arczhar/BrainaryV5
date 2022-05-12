@@ -5228,27 +5228,216 @@ MonoBehaviour:
   resultPanel: {fileID: 902098793}
   panelPretest: {fileID: 0}
   QnA:
-  - Question: 5 + 1
+  - Question: 0
     Answer:
-    - 6
-    - 2
-    - 3
-    - 5
+    - 0000
+    - 1000
+    - 0001
+    - 0010
     CorrectAnswer: 1
-  - Question: 5 + 5
+  - Question: 2
     Answer:
-    - 20
-    - 10
-    - 32
-    - 55
-    CorrectAnswer: 2
-  - Question: 4 + 4
+    - 0011
+    - 1010
+    - 0010
+    - 1100
+    CorrectAnswer: 3
+  - Question: 4
+    Answer:
+    - 1000
+    - 1110
+    - 0110
+    - 0100
+    CorrectAnswer: 4
+  - Question: 7
+    Answer:
+    - 0111
+    - 1101
+    - 1110
+    - 1111
+    CorrectAnswer: 1
+  - Question: 9
+    Answer:
+    - 1100
+    - 0101
+    - 1001
+    - 1101
+    CorrectAnswer: 3
+  - Question: 0110
     Answer:
     - 5
-    - 3
+    - 6
     - 8
     - 1
+    CorrectAnswer: 2
+  - Question: 1000
+    Answer:
+    - 9
+    - 13
+    - 10
+    - 8
+    CorrectAnswer: 4
+  - Question: 1010
+    Answer:
+    - 10
+    - 11
+    - 9
+    - 3
+    CorrectAnswer: 1
+  - Question: 1011
+    Answer:
+    - 4
+    - 11
+    - 10
+    - 7
+    CorrectAnswer: 2
+  - Question: 1111
+    Answer:
+    - 14
+    - 7
+    - 15
+    - 16
     CorrectAnswer: 3
+  - Question: 1
+    Answer:
+    - 100001
+    - 000001
+    - 000011
+    - 001000
+    CorrectAnswer: 2
+  - Question: 5
+    Answer:
+    - 101000
+    - 101011
+    - 000101
+    - 001010
+    CorrectAnswer: 3
+  - Question: 7
+    Answer:
+    - 000111
+    - 111000
+    - 110011
+    - 011100
+    CorrectAnswer: 1
+  - Question: 8
+    Answer:
+    - 001000
+    - 010000
+    - 000100
+    - 100001
+    CorrectAnswer: 1
+  - Question: 11
+    Answer:
+    - 110011
+    - 001011
+    - 011000
+    - 001100
+    CorrectAnswer: 2
+  - Question: 001111
+    Answer:
+    - 16
+    - 15
+    - 8
+    - 9
+    CorrectAnswer: 2
+  - Question: 010000
+    Answer:
+    - 20
+    - 14
+    - 16
+    - 18
+    CorrectAnswer: 3
+  - Question: 010100
+    Answer:
+    - 22
+    - 10
+    - 17
+    - 20
+    CorrectAnswer: 4
+  - Question: 000110
+    Answer:
+    - 2
+    - 7
+    - 6
+    - 5
+    CorrectAnswer: 3
+  - Question: 000100
+    Answer:
+    - 4
+    - 3
+    - 5
+    - 6
+    CorrectAnswer: 1
+  - Question: 1
+    Answer:
+    - 10000001
+    - 00000011
+    - 00000001
+    - 00000010
+    CorrectAnswer: 3
+  - Question: 8
+    Answer:
+    - 00001000
+    - 00010000
+    - 00001001
+    - 10001000
+    CorrectAnswer: 1
+  - Question: 15
+    Answer:
+    - 0001000
+    - 00011110
+    - 00001111
+    - 0000011
+    CorrectAnswer: 3
+  - Question: 6
+    Answer:
+    - 10000101
+    - 00000110
+    - 00000111
+    - 00001000
+    CorrectAnswer: 2
+  - Question: 20
+    Answer:
+    - 00100101
+    - 00010100
+    - 10010100
+    - 10001000
+    CorrectAnswer: 2
+  - Question: 01100100
+    Answer:
+    - 100
+    - 90
+    - 80
+    - 110
+    CorrectAnswer: 1
+  - Question: 00000010
+    Answer:
+    - 1
+    - 2
+    - 10
+    - 4
+    CorrectAnswer: 2
+  - Question: 11111111
+    Answer:
+    - 252
+    - 254
+    - 256
+    - 255
+    CorrectAnswer: 4
+  - Question: 00000100
+    Answer:
+    - 7
+    - 2
+    - 6
+    - 4
+    CorrectAnswer: 4
+  - Question: 00001111
+    Answer:
+    - 15
+    - 7
+    - 16
+    - 8
+    CorrectAnswer: 1
   options:
   - {fileID: 543571484}
   - {fileID: 1008698871}
@@ -11017,26 +11206,12 @@ MonoBehaviour:
     - 1100
     - 1001
     CorrectAnswer: 1
-  - Question: 1
-    Answer:
-    - 1100
-    - 0001
-    - 0011
-    - 1110
-    CorrectAnswer: 2
   - Question: 2
     Answer:
     - 1000
     - 0001
     - 0010
     - 0111
-    CorrectAnswer: 3
-  - Question: 3
-    Answer:
-    - 1001
-    - 1101
-    - 0011
-    - 0000
     CorrectAnswer: 3
   - Question: 4
     Answer:
@@ -11045,26 +11220,26 @@ MonoBehaviour:
     - 0010
     - 1101
     CorrectAnswer: 2
-  - Question: 5
-    Answer:
-    - 0101
-    - 1100
-    - 1001
-    - 1010
-    CorrectAnswer: 1
-  - Question: 6
-    Answer:
-    - 0100
-    - 0110
-    - 1100
-    - 0000
-    CorrectAnswer: 2
   - Question: 7
     Answer:
     - 1001
     - 1100
     - 1111
     - 0111
+    CorrectAnswer: 4
+  - Question: 9
+    Answer:
+    - 1001
+    - 0001
+    - 1100
+    - 0010
+    CorrectAnswer: 1
+  - Question: 0110
+    Answer:
+    - 9
+    - 7
+    - 4
+    - 6
     CorrectAnswer: 4
   - Question: 1000
     Answer:
@@ -11073,13 +11248,6 @@ MonoBehaviour:
     - 8
     - 1
     CorrectAnswer: 3
-  - Question: 1001
-    Answer:
-    - 9
-    - 2
-    - 8
-    - 5
-    CorrectAnswer: 1
   - Question: 1010
     Answer:
     - 2
@@ -11094,27 +11262,6 @@ MonoBehaviour:
     - 9
     - 1
     CorrectAnswer: 2
-  - Question: 1100
-    Answer:
-    - 0
-    - 9
-    - 11
-    - 12
-    CorrectAnswer: 4
-  - Question: 1101
-    Answer:
-    - 11
-    - 13
-    - 5
-    - 1
-    CorrectAnswer: 2
-  - Question: 1110
-    Answer:
-    - 3
-    - 11
-    - 14
-    - 8
-    CorrectAnswer: 3
   - Question: 1111
     Answer:
     - 11
@@ -11129,27 +11276,6 @@ MonoBehaviour:
     - 001000
     - 011000
     CorrectAnswer: 1
-  - Question: 2
-    Answer:
-    - 111010
-    - 000010
-    - 000011
-    - 100011
-    CorrectAnswer: 2
-  - Question: 3
-    Answer:
-    - 100001
-    - 001100
-    - 110000
-    - 000011
-    CorrectAnswer: 4
-  - Question: 4
-    Answer:
-    - 100000
-    - 000100
-    - 010010
-    - 111000
-    CorrectAnswer: 2
   - Question: 5
     Answer:
     - 001010
@@ -11157,13 +11283,6 @@ MonoBehaviour:
     - 110011
     - 000101
     CorrectAnswer: 4
-  - Question: 6
-    Answer:
-    - 000110
-    - 011000
-    - 110001
-    - 111000
-    CorrectAnswer: 1
   - Question: 7
     Answer:
     - 000111
@@ -11178,6 +11297,13 @@ MonoBehaviour:
     - 100011
     - 101010
     CorrectAnswer: 2
+  - Question: 11
+    Answer:
+    - 001011
+    - 110011
+    - 010101
+    - 110010
+    CorrectAnswer: 1
   - Question: 001111
     Answer:
     - 32
@@ -11192,13 +11318,6 @@ MonoBehaviour:
     - 16
     - 14
     CorrectAnswer: 3
-  - Question: 010001
-    Answer:
-    - 17
-    - 27
-    - 11
-    - 7
-    CorrectAnswer: 1
   - Question: 010100
     Answer:
     - 12
@@ -11206,160 +11325,90 @@ MonoBehaviour:
     - 2
     - 22
     CorrectAnswer: 2
-  - Question: 011001
-    Answer:
-    - 19
-    - 10
-    - 12
-    - 25
-    CorrectAnswer: 4
-  - Question: 011100
-    Answer:
-    - 32
-    - 28
-    - 3
-    - 30
-    CorrectAnswer: 2
-  - Question: 011110
+  - Question: 000110
     Answer:
     - 7
-    - 30
-    - 4
-    - 10
-    CorrectAnswer: 2
-  - Question: 100000
+    - 11
+    - 6
+    - 8
+    CorrectAnswer: 3
+  - Question: 000100
     Answer:
-    - 32
-    - 12
-    - 22
-    - 17
+    - 4
+    - 5
+    - 6
+    - 3
     CorrectAnswer: 1
   - Question: 1
     Answer:
-    - 11100001
-    - 00110011
+    - 10001000
     - 00000001
+    - 00000010
     - 10000001
-    CorrectAnswer: 3
-  - Question: 4
-    Answer:
-    - 00000100
-    - 01000000
-    - 00001000
-    - 00100100
-    CorrectAnswer: 1
-  - Question: 6
-    Answer:
-    - 11000000
-    - 00000110
-    - 00000111
-    - 00110011
     CorrectAnswer: 2
   - Question: 8
     Answer:
-    - 00110000
-    - 10001000
-    - 10000000
+    - 00000111
+    - 10000100
     - 00001000
-    CorrectAnswer: 4
+    - 000011111
+    CorrectAnswer: 3
   - Question: 15
     Answer:
-    - 00111100
     - 00001111
-    - 00011110
-    - 00100011
-    CorrectAnswer: 2
-  - Question: 18
+    - 00000111
+    - 00010000
+    - 10000011
+    CorrectAnswer: 1
+  - Question: 6
     Answer:
-    - 00010011
-    - 10001111
-    - 11001111
-    - 00010010
-    CorrectAnswer: 4
+    - 10000100
+    - 00000110
+    - 10000110
+    - 11010001
+    CorrectAnswer: 2
   - Question: 20
     Answer:
+    - 10010011
+    - 11000101
     - 00010100
-    - 00110010
-    - 11000110
-    - 00101001
-    CorrectAnswer: 1
-  - Question: 30
-    Answer:
-    - 11100001
-    - 00011110
-    - 10001001
-    - 11100001
-    CorrectAnswer: 2
-  - Question: 00000010
-    Answer:
-    - 1
-    - 23
-    - 2
-    - 10
-    CorrectAnswer: 3
-  - Question: 00000101
-    Answer:
-    - 5
-    - 25
-    - 2
-    - 10
-    CorrectAnswer: 1
-  - Question: 00001101
-    Answer:
-    - 3
-    - 23
-    - 13
-    - 33
-    CorrectAnswer: 3
-  - Question: 00011001
-    Answer:
-    - 55
-    - 25
-    - 32
-    - 27
-    CorrectAnswer: 2
-  - Question: 00101000
-    Answer:
-    - 50
-    - 40
-    - 10
-    - 60
-    CorrectAnswer: 2
-  - Question: 00100011
-    Answer:
-    - 5
-    - 15
-    - 35
-    - 25
-    CorrectAnswer: 3
-  - Question: '00111100 '
-    Answer:
-    - 30
-    - 20
-    - 60
-    - 80
+    - 10001100
     CorrectAnswer: 3
   - Question: 01100100
     Answer:
     - 100
-    - 153
-    - 112
-    - 130
+    - 90
+    - 110
+    - 80
     CorrectAnswer: 1
-  - Question: 10111111
+  - Question: 00000010
     Answer:
-    - 191
-    - 255
-    - 200
-    - 130
+    - 2
+    - 3
+    - 6
+    - 10
     CorrectAnswer: 1
-  - Question: '11111111 '
+  - Question: 11111111
     Answer:
-    - 242
-    - 98
-    - 128
+    - 225
+    - 254
     - 255
-    CorrectAnswer: 4
+    - 256
+    CorrectAnswer: 3
+  - Question: 00000100
+    Answer:
+    - 1
+    - 5
+    - 4
+    - 2
+    CorrectAnswer: 3
+  - Question: 00001111
+    Answer:
+    - 16
+    - 15
+    - 8
+    - 7
+    CorrectAnswer: 2
   options:
   - {fileID: 159732946}
   - {fileID: 1756994231}
@@ -13599,7 +13648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: 407}
+  m_AnchoredPosition: {x: -10.000061, y: 407}
   m_SizeDelta: {x: -338.0462, y: -2162.451}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961197281
