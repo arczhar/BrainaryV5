@@ -28,10 +28,10 @@ public class PreTestManager : MonoBehaviour
     public Text QuestionTxt;
     public TMP_Text ScoreText;
     public TMP_Text mmrText;
-   
+
     public void Start()
     {
-        
+
         totalQuestion = QnA.Count;
         generateQuestion();
     }
@@ -48,28 +48,46 @@ public class PreTestManager : MonoBehaviour
         generateQuestion();
     }
 
-     void testDone()
-     {
+    void testDone()
+    {
         ScoreText.text = score + "";
         calculateMMR();
         testPanel.SetActive(false);
         resultPanel.SetActive(true);
-     }
+    }
     void calculateMMR()
     {
         mmr = int.Parse(ScoreText.text);
-        
 
-        if (mmr <= 10)
+
+        if (mmr <= 50 && mmr > 40)
         {
-            mmrText.text = ("500");
+            mmrText.text = ("1800");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
-     
+
         }
-        else
+        else if (mmr <= 40 && mmr > 30)
         {
-            mmrText.text = ("1000");
+            mmrText.text = ("1500");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
+        }
+        else if (mmr <= 30 && mmr > 20)
+        {
+            mmrText.text = ("1200");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
+        }
+        else if (mmr <= 20 && mmr > 10)
+        {
+            mmrText.text = ("900");
+            finalmmr = int.Parse(mmrText.text);
+            GlobalVariable.TotalScore = finalmmr;
+        }
+        else if (mmr <= 10 && mmr > 0)
+        {
+            mmrText.text = ("500");
             finalmmr = int.Parse(mmrText.text);
             GlobalVariable.TotalScore = finalmmr;
         }
@@ -79,30 +97,30 @@ public class PreTestManager : MonoBehaviour
     public void saveMMR()
     {
         GlobalVariable.PreTestScore = score;
-        panelPretest.SetActive(false);  
+        panelPretest.SetActive(false);
     }
 
     void SetAnswer()
     {
-        for (int i = 0; i < options.Length ; i++)
+        for (int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
-            
-            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestions].Answer[i]; 
 
-            if(QnA[currentQuestions].CorrectAnswer == i+1)
+            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestions].Answer[i];
+
+            if (QnA[currentQuestions].CorrectAnswer == i + 1)
             {
-                
+
                 options[i].GetComponent<AnswerScript>().isCorrect = true;
 
             }
-            
+
         }
     }
 
     void generateQuestion()
     {
-        if(QnA.Count > 0)
+        if (QnA.Count > 0)
         {
             currentQuestions = Random.Range(0, QnA.Count);
 
@@ -115,7 +133,7 @@ public class PreTestManager : MonoBehaviour
             //Debug.Log("Quiz Done");
             testDone();
         }
-           
+
     }
 
 
