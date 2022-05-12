@@ -49,6 +49,7 @@ public class GlobalVariable : Singleton<GlobalVariable>
         set { PlayerPrefs.SetInt("TotalLose", value); }
     }
 
+    //PLAYER MMR
     public static int TotalScore
     {
         get { return PlayerPrefs.GetInt("TotalScore", 0); }
