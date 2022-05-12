@@ -13,8 +13,6 @@ public class PreTestManager : MonoBehaviour
     public GameObject resultPanel;
     public GameObject panelPretest;
 
-
-
     public List<QuestionAndAnswer> QnA;
     public GameObject[] options;
     public int currentQuestions;
@@ -28,7 +26,8 @@ public class PreTestManager : MonoBehaviour
     public Text QuestionTxt;
     public TMP_Text ScoreText;
     public TMP_Text mmrText;
-   
+    
+
     public void Start()
     {
         
@@ -55,6 +54,9 @@ public class PreTestManager : MonoBehaviour
         testPanel.SetActive(false);
         resultPanel.SetActive(true);
      }
+
+    
+
     void calculateMMR()
     {
         mmr = int.Parse(ScoreText.text);
