@@ -8,7 +8,6 @@ public class PostTesTManager : MonoBehaviour
 {
     [Header("Post Test UI")]
     public GameObject intructionF;
-    public GameObject instructionS;
     public GameObject testPanel;
     public GameObject resultPanel;
     public GameObject panelPostTest;
@@ -90,7 +89,12 @@ public class PostTesTManager : MonoBehaviour
 
     }
 
+    public void Next()
+    {
+        intructionF.SetActive(false);
+        testPanel.SetActive(true);
 
+    }
 
 
 }

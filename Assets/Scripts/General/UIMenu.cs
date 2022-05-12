@@ -19,6 +19,7 @@ public class UIMenu : MonoBehaviour
     public TextBox textScore;
     public TMP_Text preTestScore;
     public TMP_Text postTestScore;
+    
 
     public GameObject btnChangeAvatar;
 
@@ -32,6 +33,9 @@ public class UIMenu : MonoBehaviour
     public GameObject panelPreTest;
     public GameObject panelPostTest;
     public GameObject panelAvatar;
+    public GameObject congratsTxt;
+    public GameObject reachedTxt;
+    public GameObject postTestScoreTxt;
     
 
     public GameObject soundOffIcon;
@@ -45,16 +49,9 @@ public class UIMenu : MonoBehaviour
 
     void Awake()
     {
-            //MMR                              //TotalWar
-        if (GlobalVariable.TotalScore == 1500 || GlobalVariable.TotalWar == 1)
-        {
-            panelPostTest.SetActive(true);
-        }
-        else
-        {
-            panelPostTest.SetActive(false);
-        }
 
+        showPostTest();
+       
 
     }
 
@@ -71,6 +68,38 @@ public class UIMenu : MonoBehaviour
         FetchStats();
         FetchScore();
 
+      
+
+    }
+
+    void showPostTest()
+    {
+
+       if(GlobalVariable.PostTestScore > 1)
+        {
+            if (GlobalVariable.TotalScore == 500)//MMR 
+            {
+                congratsTxt.SetActive(true);
+                panelPostTest.SetActive(true);
+            }
+            else if (GlobalVariable.TotalWar == 1)//TotalWar
+            {
+                reachedTxt.SetActive(true);
+                panelPostTest.SetActive(true);
+            }
+            else
+            {
+                //postTestScoreTxt.SetActive(true);
+                panelPostTest.SetActive(false);
+               
+            }
+        }
+
+       else if(GlobalVariable.PostTestScore <= 1)
+        {
+            postTestScoreTxt.SetActive(true);
+            panelPostTest.SetActive(false);
+        }
     }
 
     void showPanelPreTest()
