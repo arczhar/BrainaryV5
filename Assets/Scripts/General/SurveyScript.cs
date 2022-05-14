@@ -18,44 +18,60 @@ public class SurveyScript : MonoBehaviour
     public TMP_Text pretestScore;
     public TMP_Text posttestScore;
 
-    string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsorzK8fcwJ2hG1mpgwlnVnYjxPbsRZnCHW4dTD_2UlR2ROA/formResponse";
+    private string Namet;
+    private string Course;
+    private string Gender;
+    private string TotalgGames;
+    private string TotalWins;
+    private string Totalloose;
+    private string Mmr;
+    private string PretestScore;
+    private string PosttestScore;
 
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsorzK8fcwJ2hG1mpgwlnVnYjxPbsRZnCHW4dTD_2UlR2ROA/formResponse";
 
-    public void Send()
-    {
-        StartCoroutine(Post(namet.text));
-        //StartCoroutine(Post(course.text));
-        //StartCoroutine(Post(gender.text));
-        //StartCoroutine(Post(totalgGames.text));
-        //StartCoroutine(Post(totalWins.text));
-        //StartCoroutine(Post(totalloose.text));
-        //StartCoroutine(Post(mmr.text));
-        //StartCoroutine(Post(pretestScore.text));
-        //StartCoroutine(Post(posttestScore.text));
-    }
-
-    IEnumerator Post(string s1)
+    IEnumerator Post(string namee, string coursee, string genderr, string totalgamess, string totalwinss, string totalloose, string mmrr, string pretestScoree, string posttestScoree)
     {
         WWWForm form = new WWWForm();
-        form.AddField("entry.363315195", s1); //Name
-        /*
-        form.AddField("entry.393028410", s1); //Course
-        form.AddField("entry.330611923", s1); //gender
-        form.AddField("entry.1100045297", s1); //totalgames
-        form.AddField("entry.1036641033", s1); //totalwins
-        form.AddField("entry.526091228", s1); //totalloose
-        form.AddField("entry.569300200", s1); //mmr
-        form.AddField("entry.382311103", s1); //pretestscore
-        form.AddField("entry.647715252", s1); //posttestscore
-
-
-        */
-
-        UnityWebRequest www = UnityWebRequest.Post(URL, form);
-
-        yield return www.SendWebRequest();
+        form.AddField("entry.363315195", namee);
+        form.AddField("entry.393028410", coursee);
+        form.AddField("entry.330611923", genderr);
+        form.AddField("entry.1100045297", totalgamess);
+        form.AddField("entry.1036641033", totalwinss);
+        form.AddField("entry.526091228", totalloose);
+        form.AddField("entry.569300200", mmrr);
+        form.AddField("entry.382311103", pretestScoree);
+        form.AddField("entry.647715252", posttestScoree);
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+        yield return www;
 
     }
+
+
+    public void SendData()
+    {
+        Namet = namet.GetComponent<TMP_Text>().text;
+        Course = course.GetComponent<TMP_Text>().text;
+        Gender = gender.GetComponent<TMP_Text>().text;
+        TotalgGames = totalgGames.GetComponent<TMP_Text>().text;
+        TotalWins = totalWins.GetComponent<TMP_Text>().text;
+        Totalloose = totalloose.GetComponent<TMP_Text>().text;
+        Mmr = mmr.GetComponent<TMP_Text>().text;
+        PretestScore = pretestScore.GetComponent<TMP_Text>().text;
+        PosttestScore = posttestScore.GetComponent<TMP_Text>().text;
+
+
+        StartCoroutine(Post(Namet, Course, Gender, TotalgGames, TotalWins, Totalloose, Mmr, PretestScore, PosttestScore));
+    }
+
+
+
+
+
+
+
+   
 
    
 
