@@ -7,6 +7,8 @@ using TMPro;
 
 public class SurveyScript : MonoBehaviour
 {
+    public GameObject SurveyPanel;
+    public GameObject FeedBackPanel;
 
     public TMP_Text namet;
     public TMP_Text course;
@@ -63,6 +65,9 @@ public class SurveyScript : MonoBehaviour
 
 
         StartCoroutine(Post(Namet, Course, Gender, TotalgGames, TotalWins, Totalloose, Mmr, PretestScore, PosttestScore));
+
+        FeedBackPanel.SetActive(true);
+        SurveyPanel.SetActive(false);
     }
 
 

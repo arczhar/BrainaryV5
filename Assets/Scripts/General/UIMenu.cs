@@ -44,6 +44,8 @@ public class UIMenu : MonoBehaviour
     public GameObject congratsTxt;
     public GameObject reachedTxt;
     public GameObject postTestScoreTxt;
+    public GameObject SurveyPanel;
+    public GameObject feedBackPanel;
     
 
     public GameObject soundOffIcon;
@@ -62,10 +64,12 @@ public class UIMenu : MonoBehaviour
 
         if (GlobalVariable.PostTestScore == 0)
         {
+            SurveyPanel.SetActive(false);
             postTestScoreTxt.SetActive(false);
         }
         else
         {
+            
             postTestScoreTxt.SetActive(true);
         }
        
@@ -141,10 +145,10 @@ public class UIMenu : MonoBehaviour
 
     public void SurveyFetch()
     {
-        SurveytextTotalWar.text = string.Format("{0}x", GlobalVariable.TotalWar);
-        SurveytextTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
-        SurveytextTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
-        SurveytextScore.text = string.Format("{0}", GlobalVariable.TotalScore);
+        SurveytextTotalWar.text = string.Format("{0}", GlobalVariable.TotalWar);
+        SurveytextTotalWin.text = string.Format("{0}", GlobalVariable.TotalWin);
+        SurveytextTotalLose.text = string.Format("{0}", GlobalVariable.TotalLose);
+        SurveytextScore.text = string.Format("{0} MMR", GlobalVariable.TotalScore);
         SurveypreTestScore.text = string.Format("{0} / 30", GlobalVariable.PreTestScore);
         SurveypostTestScore.text = string.Format("{0} / 30", GlobalVariable.PostTestScore);
     }
@@ -152,10 +156,10 @@ public class UIMenu : MonoBehaviour
 
     void FetchStats()
     {
-        textTotalWar.text = string.Format("{0}", GlobalVariable.TotalWar);
-        textTotalWin.text = string.Format("{0}", GlobalVariable.TotalWin);
-        textTotalLose.text = string.Format("{0}", GlobalVariable.TotalLose);
-        textScore.text = string.Format("{0}", GlobalVariable.TotalScore);
+        textTotalWar.text = string.Format("{0}x", GlobalVariable.TotalWar);
+        textTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
+        textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
+        textScore.text = string.Format("{0} ", GlobalVariable.TotalScore);
 
         
     }
@@ -309,6 +313,12 @@ public class UIMenu : MonoBehaviour
     {
         panelHowToPlay.SetActive(true);
 
+    }
+
+    public void onClickFeedBack()
+    {
+        Application.OpenURL("https://forms.gle/7tNLUWyoS3FSSAe66");
+        feedBackPanel.SetActive(false);
     }
 
 

@@ -12,6 +12,7 @@ public class PostTesTManager : MonoBehaviour
     public GameObject resultPanel;
     public GameObject panelPostTest;
     public GameObject postScorerTxt;
+    public GameObject SurveyPanel;
     public int score;
     public int postTestScore;
     int totalQuestion = 0;
@@ -51,9 +52,10 @@ public class PostTesTManager : MonoBehaviour
 
     public void saveResult()
     {
-        GlobalVariable.PostTestScore = score;
+        GlobalVariable.PostTestScore = score; 
         postScorerTxt.SetActive(true);
         panelPostTest.SetActive(false);
+        SurveyPanel.SetActive(true);
     }
     void setAnswer()
     {
