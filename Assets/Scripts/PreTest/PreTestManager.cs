@@ -12,6 +12,7 @@ public class PreTestManager : MonoBehaviour
     public GameObject testPanel;
     public GameObject resultPanel;
     public GameObject panelPretest;
+    public GameObject postTestScoreTxt;
 
     public List<QuestionAndAnswer> QnA;
     public GameObject[] options;

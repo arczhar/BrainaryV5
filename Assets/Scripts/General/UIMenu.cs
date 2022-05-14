@@ -19,7 +19,15 @@ public class UIMenu : MonoBehaviour
     public TextBox textScore;
     public TMP_Text preTestScore;
     public TMP_Text postTestScore;
-    
+
+    [Header("Survey TextBox")]
+    public TMP_Text SurveytextTotalWar;
+    public TMP_Text SurveytextTotalWin;
+    public TMP_Text SurveytextTotalLose;
+    public TMP_Text SurveytextScore;
+    public TMP_Text SurveypreTestScore;
+    public TMP_Text SurveypostTestScore;
+
 
     public GameObject btnChangeAvatar;
 
@@ -49,14 +57,23 @@ public class UIMenu : MonoBehaviour
 
     void Awake()
     {
-
         showPostTest();
        
 
+        if (GlobalVariable.PostTestScore == 0)
+        {
+            postTestScoreTxt.SetActive(false);
+        }
+        else
+        {
+            postTestScoreTxt.SetActive(true);
+        }
+       
     }
 
     void Start()
     {
+        SurveyFetch();
         showPanelPreTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
@@ -71,33 +88,24 @@ public class UIMenu : MonoBehaviour
       
 
     }
-
+    
     void showPostTest()
     {
-
-       if(GlobalVariable.PostTestScore > 1)
+        if(GlobalVariable.PostTestScore == 0)
         {
-            if (GlobalVariable.TotalScore == 500)//MMR 
+            if (GlobalVariable.TotalScore > 500)
             {
                 congratsTxt.SetActive(true);
                 panelPostTest.SetActive(true);
             }
-            else if (GlobalVariable.TotalWar == 1)//TotalWar
+            else if (GlobalVariable.TotalWar == 5)
             {
                 reachedTxt.SetActive(true);
-                panelPostTest.SetActive(true);
-            }
-            else
-            {
-                //postTestScoreTxt.SetActive(true);
                 panelPostTest.SetActive(false);
-               
             }
         }
-
-       else if(GlobalVariable.PostTestScore <= 1)
+        else
         {
-            postTestScoreTxt.SetActive(true);
             panelPostTest.SetActive(false);
         }
     }
@@ -131,14 +139,25 @@ public class UIMenu : MonoBehaviour
         }
     }
 
+    public void SurveyFetch()
+    {
+        SurveytextTotalWar.text = string.Format("{0}x", GlobalVariable.TotalWar);
+        SurveytextTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
+        SurveytextTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
+        SurveytextScore.text = string.Format("{0}", GlobalVariable.TotalScore);
+        SurveypreTestScore.text = string.Format("{0} / 30", GlobalVariable.PreTestScore);
+        SurveypostTestScore.text = string.Format("{0} / 30", GlobalVariable.PostTestScore);
+    }
+
+
     void FetchStats()
     {
-        textTotalWar.text = string.Format("{0}x", GlobalVariable.TotalWar);
-        textTotalWin.text = string.Format("{0}x", GlobalVariable.TotalWin);
-        textTotalLose.text = string.Format("{0}x", GlobalVariable.TotalLose);
+        textTotalWar.text = string.Format("{0}", GlobalVariable.TotalWar);
+        textTotalWin.text = string.Format("{0}", GlobalVariable.TotalWin);
+        textTotalLose.text = string.Format("{0}", GlobalVariable.TotalLose);
         textScore.text = string.Format("{0}", GlobalVariable.TotalScore);
-        
 
+        
     }
 
     void FetchScore()
