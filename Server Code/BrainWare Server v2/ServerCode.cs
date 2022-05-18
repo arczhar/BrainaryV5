@@ -12,7 +12,7 @@ namespace BrainWare_Server_v2
         WAITING, READY, PLAYING, GAMEOVER
     }
 
-    [RoomType("BrainWarV2")]
+    [RoomType("Brainary")]
     public class ServerCode : Game<Player>
     {
         private string Version = "v1.0.0";
@@ -38,11 +38,13 @@ namespace BrainWare_Server_v2
 
         private bool isShuffle;
 
+        public const int QUESTIONLIMIT = 25;
+
         public override void GameStarted()
         {
             base.GameStarted();
             Console.WriteLine("Game Brain sssWars is started: " + RoomId);
-            
+
 
             TimerMatchmaking = AddTimer(NotResponseMatchmaking, 1000);
             TimerCountdown = AddTimer(CountDown, 1000);
@@ -96,10 +98,10 @@ namespace BrainWare_Server_v2
         {
             if (Players.Count() <= 1)
             {
-                if(GameState == GameState.PLAYING)
+                if (GameState == GameState.PLAYING)
                     GameOver(true, player);
             }
-                
+
 
             Console.WriteLine("Player Left: " + player.ConnectUserId);
         }
@@ -109,7 +111,7 @@ namespace BrainWare_Server_v2
             MaxTimeMatchmaking--;
             if (MaxTimeMatchmaking <= 0)
             {
-                
+
                 TimerMatchmaking.Stop();
                 MaxTimeMatchmaking = 15;
 
@@ -132,22 +134,22 @@ namespace BrainWare_Server_v2
                 TimerCountdown.Stop();
                 GameState = GameState.PLAYING;
                 Broadcast("MSG:STATE", (int)GameState);
-                questionOf = string.Format("{0} of {1}", indexQuestion + 1, SizeQuestion);
+                questionOf = string.Format("{0} of {1}", indexQuestion + 1, QUESTIONLIMIT);
                 Broadcast("MSG:SET_QUESTION", questionOf, indexQuestion);
             }
         }
 
         private void TimeAnswer()
         {
-            if(GameState == GameState.PLAYING)
+            if (GameState == GameState.PLAYING)
             {
-                
+
                 if (MaxTimeAnswer < 0)
                 {
-                    if(indexQuestion < Questions.Count - 1)
+                    if (indexQuestion < Questions.Count - 1)
                     {
                         indexQuestion++;
-                        questionOf = string.Format("{0} of {1}", indexQuestion + 1, SizeQuestion);
+                        questionOf = string.Format("{0} of {1}", indexQuestion + 1, QUESTIONLIMIT);
                         Broadcast("MSG:SET_QUESTION", questionOf, indexQuestion);
                         MaxTimeAnswer = factorTimeAnswer;
                     }
@@ -173,23 +175,23 @@ namespace BrainWare_Server_v2
             switch (m.Type)
             {
                 case "MSG:READY":
-                        player.UserSuccessLoadScene = true;
+                    player.UserSuccessLoadScene = true;
 
-                        if(Players.ToList().Count(x => x.UserSuccessLoadScene) >= maxPlayer)
-                        {
-                            RoomData["game:state"] = "PLAYING";
-                            RoomData.Save();
+                    if (Players.ToList().Count(x => x.UserSuccessLoadScene) >= maxPlayer)
+                    {
+                        RoomData["game:state"] = "PLAYING";
+                        RoomData.Save();
 
-                            TimerMatchmaking.Stop();
-                            MaxTimeMatchmaking = 15; 
+                        TimerMatchmaking.Stop();
+                        MaxTimeMatchmaking = 15;
 
-                            Player playerEnemy = Players.SingleOrDefault(x => x.ConnectUserId != player.ConnectUserId);
+                        Player playerEnemy = Players.SingleOrDefault(x => x.ConnectUserId != player.ConnectUserId);
 
                         if (!isShuffle)
                         {
                             isShuffle = true;
                             Broadcast("MSG:SUFFLE",
-                                Utils.ConvertToByteArray(Utils.SuffleQuestionList(SizeQuestion, Questions).ToArray()),
+                                Utils.ConvertToByteArray(Utils.SuffleQuestionList(QUESTIONLIMIT, Questions).ToArray()),
                                 player.ConnectUserId,
                                 player.JoinData["avatar:name"],
                                 player.JoinData["avatar:icon"],
@@ -199,7 +201,7 @@ namespace BrainWare_Server_v2
 
                         }
 
-                       
+
                     }
                     break;
                 case "MSG:ANSWER":
@@ -254,23 +256,23 @@ namespace BrainWare_Server_v2
         private void NextQuestion()
         {
             MaxNextQuestion--;
-            if(MaxNextQuestion < 0)
+            if (MaxNextQuestion < 0)
             {
                 TimerNextQuestion.Stop();
                 MaxNextQuestion = configMaxNextQuestion;
 
-                
+
                 if (indexQuestion < Questions.Count - 1)
                 {
                     indexQuestion++;
-                    questionOf = string.Format("{0} of {1}", indexQuestion + 1, SizeQuestion);
+                    questionOf = string.Format("{0} of {1}", indexQuestion + 1, QUESTIONLIMIT);
                     Broadcast("MSG:SET_QUESTION", questionOf, indexQuestion);
                     MaxTimeAnswer = factorTimeAnswer;
 
                     TimerTimeAnswer = AddTimer(TimeAnswer, 1000);
                 }
 
-                
+
             }
 
         }
@@ -289,7 +291,7 @@ namespace BrainWare_Server_v2
             }
 
             GameState = GameState.GAMEOVER;
-            
+
             indexQuestion = Questions.Count;
 
             Broadcast("MSG:GAMEOVER", playerWin.ConnectUserId, playerWin.PlayerScore, diconnected);

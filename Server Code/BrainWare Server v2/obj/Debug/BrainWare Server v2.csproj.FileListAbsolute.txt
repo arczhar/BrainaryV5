@@ -7,11 +7,11 @@ F:\PROJECT\GITLAB\MONKOSTUDIO\Brain War Multiplayer\Server Code\BrainWare Server
 F:\PROJECT\GITLAB\MONKOSTUDIO\Brain War Multiplayer\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.dll
 F:\PROJECT\GITLAB\MONKOSTUDIO\Brain War Multiplayer\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.pdb
 F:\PROJECT\GITLAB\MONKOSTUDIO\Brain War Multiplayer\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csprojAssemblyReference.cache
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\bin\Debug\BrainWare Server v2.dll
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\bin\Debug\BrainWare Server v2.pdb
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\bin\Debug\Player.IO GameLibrary.xml
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.AssemblyReference.cache
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.CoreCompileInputs.cache
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.CopyComplete
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.dll
-C:\Users\Jhet\Desktop\Thesis Projects\BrainaryV4\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.pdb
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\bin\Debug\BrainWare Server v2.dll
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\bin\Debug\BrainWare Server v2.pdb
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\bin\Debug\Player.IO GameLibrary.xml
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.AssemblyReference.cache
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.CoreCompileInputs.cache
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.csproj.CopyComplete
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.dll
+C:\Users\Jhet\Desktop\Thesis Projects\The Final Project\Server Code\BrainWare Server v2\obj\Debug\BrainWare Server v2.pdb
