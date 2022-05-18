@@ -27,7 +27,7 @@ public class UIMenu : MonoBehaviour
     public TMP_Text SurveytextScore;
     public TMP_Text SurveypreTestScore;
     public TMP_Text SurveypostTestScore;
-
+   
 
     public GameObject btnChangeAvatar;
 
@@ -46,7 +46,7 @@ public class UIMenu : MonoBehaviour
     public GameObject postTestScoreTxt;
     public GameObject SurveyPanel;
     public GameObject feedBackPanel;
-    
+
 
     public GameObject soundOffIcon;
     public GameObject soundOnIcon;
@@ -60,8 +60,7 @@ public class UIMenu : MonoBehaviour
     void Awake()
     {
         showPostTest();
-       
-
+        
         if (GlobalVariable.PostTestScore == 0)
         {
             SurveyPanel.SetActive(false);
@@ -77,8 +76,9 @@ public class UIMenu : MonoBehaviour
 
     void Start()
     {
+        showPostTest();
         SurveyFetch();
-        showPanelPreTest();
+       // showPanelPreTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
@@ -102,10 +102,10 @@ public class UIMenu : MonoBehaviour
                 congratsTxt.SetActive(true);
                 panelPostTest.SetActive(true);
             }
-            else if (GlobalVariable.TotalWar == 5)
+            else if (GlobalVariable.TotalWar == 2)
             {
                 reachedTxt.SetActive(true);
-                panelPostTest.SetActive(false);
+                panelPostTest.SetActive(true);
             }
         }
         else
@@ -129,6 +129,7 @@ public class UIMenu : MonoBehaviour
     public void onClickStart()
     {
         panelPreTest.SetActive(false);
+
     }
 
     void Update()

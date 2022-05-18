@@ -75,7 +75,7 @@ public class NetworkIO : Singleton<NetworkIO>
                 delegate (Client _client)
                 {
                     client = _client;
-
+                    Client.Multiplayer.DevelopmentServer = new ServerEndpoint("192.168.0.14", 8184);
 #if BUILD_RELEASE
 
                     Client.Multiplayer.GameServerEndpointFilter = GameServerEndpointFilterDelegate;

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 
 public class SurveyScript : MonoBehaviour
@@ -10,15 +11,20 @@ public class SurveyScript : MonoBehaviour
     public GameObject SurveyPanel;
     public GameObject FeedBackPanel;
 
-    public TMP_Text namet;
-    public TMP_Text course;
-    public TMP_Text gender;
+    public Text namet;
+    private string InputName;
+    public Text course;
+    private string InputCourse;
+    public Text gender;
+    private string InputGender;
     public TMP_Text totalgGames;
     public TMP_Text totalWins;
     public TMP_Text totalloose;
     public TMP_Text mmr;
     public TMP_Text pretestScore;
     public TMP_Text posttestScore;
+    public Text test;
+    private string testF;
 
     private string Namet;
     private string Course;
@@ -53,31 +59,36 @@ public class SurveyScript : MonoBehaviour
 
     public void SendData()
     {
-        Namet = namet.GetComponent<TMP_Text>().text;
-        Course = course.GetComponent<TMP_Text>().text;
-        Gender = gender.GetComponent<TMP_Text>().text;
-        TotalgGames = totalgGames.GetComponent<TMP_Text>().text;
-        TotalWins = totalWins.GetComponent<TMP_Text>().text;
-        Totalloose = totalloose.GetComponent<TMP_Text>().text;
-        Mmr = mmr.GetComponent<TMP_Text>().text;
-        PretestScore = pretestScore.GetComponent<TMP_Text>().text;
-        PosttestScore = posttestScore.GetComponent<TMP_Text>().text;
+        InputName = namet.text;
+        InputCourse = course.text;
+        InputGender = gender.text;
+
+        if (StringExtension.IsNullOrWhiteSpace(InputName) || StringExtension.IsNullOrWhiteSpace(InputCourse) || StringExtension.IsNullOrWhiteSpace(InputGender))
+        {
+            Debug.Log("Please INPUT!!!");
+        }
+        else
+        {
+
+            Namet = namet.GetComponent<Text>().text;
+            Course = course.GetComponent<Text>().text;
+            Gender = gender.GetComponent<Text>().text;
+            TotalgGames = totalgGames.GetComponent<TMP_Text>().text;
+            TotalWins = totalWins.GetComponent<TMP_Text>().text;
+            Totalloose = totalloose.GetComponent<TMP_Text>().text;
+            Mmr = mmr.GetComponent<TMP_Text>().text;
+            PretestScore = pretestScore.GetComponent<TMP_Text>().text;
+            PosttestScore = posttestScore.GetComponent<TMP_Text>().text;
 
 
-        StartCoroutine(Post(Namet, Course, Gender, TotalgGames, TotalWins, Totalloose, Mmr, PretestScore, PosttestScore));
+            StartCoroutine(Post(Namet, Course, Gender, TotalgGames, TotalWins, Totalloose, Mmr, PretestScore, PosttestScore));
 
-        FeedBackPanel.SetActive(true);
-        SurveyPanel.SetActive(false);
+           
+            FeedBackPanel.SetActive(true);
+            SurveyPanel.SetActive(false);
+
+        }
     }
-
-
-
-
-
-
-
-   
-
    
 
 }
