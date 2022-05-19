@@ -82,7 +82,7 @@ public class UIMenu : MonoBehaviour
 
         showPostTest();
         SurveyFetch();
-        //showPanelPreTest();
+        showPanelPreTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
@@ -108,7 +108,7 @@ public class UIMenu : MonoBehaviour
                 congratsTxt.SetActive(true);
                 panelPostTest.SetActive(true);
             }
-            else if (GlobalVariable.TotalWar == 1)
+            else if (GlobalVariable.TotalWar == 51)
             {
                 reachedTxt.SetActive(true);
                 panelPostTest.SetActive(true);

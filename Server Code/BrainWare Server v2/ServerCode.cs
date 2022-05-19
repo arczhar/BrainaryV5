@@ -195,6 +195,7 @@ namespace BrainWare_Server_v2
                                 player.ConnectUserId,
                                 player.JoinData["avatar:name"],
                                 player.JoinData["avatar:icon"],
+                                player.JoinData["avatar:mmr"],
                                 playerEnemy.JoinData["avatar:name"],
                                 playerEnemy.JoinData["avatar:icon"],
                                 playerEnemy.JoinData["avatar:mmr"]

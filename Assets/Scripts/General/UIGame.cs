@@ -46,6 +46,12 @@ public class UIGame : MonoBehaviour
 
     public Sprite[] emoticons;
 
+
+    private void Start()
+    {
+        StartCoroutine(showGameUI());
+    }
+
     void Awake()
     {
         Instance = this;
@@ -58,10 +64,7 @@ public class UIGame : MonoBehaviour
         }
 
         StartCoroutine(CoroutineEmoticon());
-        
         NetworkIO.Send("MSG:READY");
-        StartCoroutine(showGameUI());
-        FetchDaTA();
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
     }
@@ -70,13 +73,6 @@ public class UIGame : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         LoadingScreen.SetActive(false);
-
-    }
-
-    public void FetchDaTA()
-    {
-
-        
 
     }
 

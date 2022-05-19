@@ -215,7 +215,7 @@ public class NetworkIO : Singleton<NetworkIO>
                     UIGame.Instance.SetOpponentData(
                             m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(4) : m.GetString(2),
                             m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(3),
-                            m.GetString(6)
+                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(7) : m.GetString(4)
                         );
                     break;
                 case "MSG:COUNTDOWN":
