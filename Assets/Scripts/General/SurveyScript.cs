@@ -26,6 +26,8 @@ public class SurveyScript : MonoBehaviour
     public Text test;
     private string testF;
 
+    public GameObject alert;
+
     private string Namet;
     private string Course;
     private string Gender;
@@ -65,7 +67,7 @@ public class SurveyScript : MonoBehaviour
 
         if (StringExtension.IsNullOrWhiteSpace(InputName) || StringExtension.IsNullOrWhiteSpace(InputCourse) || StringExtension.IsNullOrWhiteSpace(InputGender))
         {
-            Debug.Log("Please INPUT!!!");
+            alert.SetActive(true);
         }
         else
         {

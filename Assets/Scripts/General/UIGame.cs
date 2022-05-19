@@ -33,6 +33,7 @@ public class UIGame : MonoBehaviour
     private Sprite originOpponentSprite;
     public TextBox opponentName;
     public TextBox oppnentNameT;
+    public TextBox opponentMmr;
 
     public TextBox ownerScore;
     public TextBox opponentScore;
@@ -57,11 +58,12 @@ public class UIGame : MonoBehaviour
         }
 
         StartCoroutine(CoroutineEmoticon());
-
+        
         NetworkIO.Send("MSG:READY");
         StartCoroutine(showGameUI());
         FetchDaTA();
-        
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
     }
 
     IEnumerator showGameUI()
@@ -73,8 +75,8 @@ public class UIGame : MonoBehaviour
 
     public void FetchDaTA()
     {
-      
 
+        
 
     }
 
@@ -110,23 +112,24 @@ public class UIGame : MonoBehaviour
         
     }
 
-    public void SetOpponentData(string _name, string _icon)
+    public void SetOpponentData(string _name, string _icon, string _mmr)
     {
         originOwnerSprite = GlobalVariable.Avatar.AvatarImage;//Player Owner
-        originOpponentSprite = GlobalVariable.GetAvatarByID(int.Parse(_icon)).AvatarImage;
         ownerName.text = GlobalVariable.AvatarName;//Player Owner
-        ownerMMR.text = string.Format("{0}", GlobalVariable.TotalScore);
-
-        ownerAvatar.sprite = originOwnerSprite;
+        ownerMMR.text = string.Format("{0}", GlobalVariable.TotalScore);//Player Owner Global Total Score
+        ownerAvatar.sprite = originOwnerSprite;//Player Owner
         ownerAvatarT.sprite = originOwnerSprite;//Player Owner
+        
+        originOpponentSprite = GlobalVariable.GetAvatarByID(int.Parse(_icon)).AvatarImage;
         opponentAvatar.sprite = originOpponentSprite;
-        oppnentAvatarT.sprite = originOpponentSprite;//Player Owner
-
+        oppnentAvatarT.sprite = originOpponentSprite;
         opponentName.text = _name;
-        oppnentNameT.text = _name;//Player Owner
-
+        oppnentNameT.text = _name;
+        opponentMmr.text = _mmr; //Enemy Global Total Score
 
     }
+
+
 
     public void SetTimeAnswer(float _value, float _factor)
     {

@@ -13,6 +13,7 @@ public class PreTestManager : MonoBehaviour
     public GameObject resultPanel;
     public GameObject panelPretest;
     public GameObject postTestScoreTxt;
+    public GameObject popUp;
 
     public List<QuestionAndAnswer> QnA;
     public GameObject[] options;
@@ -28,25 +29,25 @@ public class PreTestManager : MonoBehaviour
     public TMP_Text ScoreText;
     public TMP_Text mmrText;
 
+   
+
     public void Start()
     {
-
-        totalQuestion = QnA.Count;
+      
         generateQuestion();
     }
-
-    public void correct()
+    private void Update()
     {
-        score += 1;
-        QnA.RemoveAt(currentQuestions);
-        generateQuestion();
-    }
-    public void wrong()
-    {
-        QnA.RemoveAt(currentQuestions);
-        generateQuestion();
+        
     }
 
+    private void Awake()
+    {
+       
+        //StartCoroutine(NextQeustion());
+    }
+   
+   
     void testDone()
     {
         ScoreText.text = score + "";
@@ -117,6 +118,36 @@ public class PreTestManager : MonoBehaviour
         }
     }
 
+    void AutoNext()
+    {
+
+    }
+
+    IEnumerator NextQeustion()
+    {
+        WaitForSeconds wait = new WaitForSeconds(5);
+        for (int i = 0; i < 30 ; i++)
+        { 
+            QnA.RemoveAt(currentQuestions);
+            generateQuestion();
+            yield return wait;
+           
+        }
+    }
+    public void correct()
+    {
+
+        score += 1;
+        QnA.RemoveAt(currentQuestions);
+        generateQuestion();
+    }
+    public void wrong()
+    {
+
+        QnA.RemoveAt(currentQuestions);
+        generateQuestion();
+    }
+
     void generateQuestion()
     {
         if (QnA.Count > 0)
@@ -145,6 +176,7 @@ public class PreTestManager : MonoBehaviour
 
     public void showTest()
     {
+        StartCoroutine(NextQeustion()); //Triger sin Caroutine
         intructionF.SetActive(false);
         instructionS.SetActive(false);
         testPanel.SetActive(true);

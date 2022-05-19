@@ -20,13 +20,13 @@ public class AnswerScript : MonoBehaviour
         if(isCorrect)
         {
           //  GetComponent<Image>().color = Color.green;
-            Debug.Log("Correct");
+         
             pretestManager.correct();
         }
         else
         {
             //GetComponent<Image>().color = Color.red;
-            Debug.Log("Wrong");
+    
             pretestManager.wrong();
         }
     }

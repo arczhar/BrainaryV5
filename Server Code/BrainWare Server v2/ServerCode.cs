@@ -38,7 +38,7 @@ namespace BrainWare_Server_v2
 
         private bool isShuffle;
 
-        public const int QUESTIONLIMIT = 25;
+        public const int QUESTIONLIMIT = 15;
 
         public override void GameStarted()
         {
@@ -196,7 +196,8 @@ namespace BrainWare_Server_v2
                                 player.JoinData["avatar:name"],
                                 player.JoinData["avatar:icon"],
                                 playerEnemy.JoinData["avatar:name"],
-                                playerEnemy.JoinData["avatar:icon"]
+                                playerEnemy.JoinData["avatar:icon"],
+                                playerEnemy.JoinData["avatar:mmr"]
                             );
 
                         }

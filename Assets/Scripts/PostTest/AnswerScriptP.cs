@@ -14,13 +14,13 @@ public class AnswerScriptP : MonoBehaviour
         if (isCorrect)
         {
             //  GetComponent<Image>().color = Color.green;
-            Debug.Log("Correct");
+            
             postTestManager.correct();
         }
         else
         {
             //GetComponent<Image>().color = Color.red;
-            Debug.Log("Wrong");
+          
             postTestManager.wrong();
            
         }

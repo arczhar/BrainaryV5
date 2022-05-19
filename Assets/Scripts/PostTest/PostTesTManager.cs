@@ -30,18 +30,28 @@ public class PostTesTManager : MonoBehaviour
         totalQuestion = QnA.Count;
         generateQuestion();
     }
- 
+  
+
     public void correct()
     {
         score += 1;
-        QnA.RemoveAt(currentQuestions);
-        generateQuestion();
+        StartCoroutine(NextQeustion());
     }
     public void wrong()
     {
-       
-        QnA.RemoveAt(currentQuestions);
-        generateQuestion();
+
+        StartCoroutine(NextQeustion());
+    }
+    IEnumerator NextQeustion()
+    {
+        WaitForSeconds wait = new WaitForSeconds(4.2F);
+        for (int i = 0; i < 30; i++)
+        {
+            QnA.RemoveAt(currentQuestions);
+            generateQuestion();
+            yield return wait;
+        }
+
     }
     void testDone()
     {
@@ -95,6 +105,7 @@ public class PostTesTManager : MonoBehaviour
     {
         intructionF.SetActive(false);
         testPanel.SetActive(true);
+        StartCoroutine(NextQeustion());
 
     }
 

@@ -142,7 +142,7 @@ public class NetworkIO : Singleton<NetworkIO>
 
     void CreateRoom(Client client, bool _visible)
     {
-        string UniqueRoom = string.Format("BrainWarV2#{0}", Utils.GenerateKey(8));
+        string UniqueRoom = string.Format("Brainary#{0}", Utils.GenerateKey(8));
         client.Multiplayer.CreateJoinRoom(
             UniqueRoom,
             ServerOptions.RoomClass,
@@ -160,7 +160,8 @@ public class NetworkIO : Singleton<NetworkIO>
             {
                 //JOIN DATA
                 { "avatar:name", GlobalVariable.AvatarName},
-                { "avatar:icon", GlobalVariable.AvatarID.ToString()}
+                { "avatar:icon", GlobalVariable.AvatarID.ToString()},
+                {"avatar:mmr",GlobalVariable.TotalScore.ToString() }
             },
             delegate (Connection connection) {
                 if (Callback != null)
@@ -213,7 +214,8 @@ public class NetworkIO : Singleton<NetworkIO>
 
                     UIGame.Instance.SetOpponentData(
                             m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(4) : m.GetString(2),
-                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(3)
+                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(3),
+                            m.GetString(6)
                         );
                     break;
                 case "MSG:COUNTDOWN":

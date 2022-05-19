@@ -5097,6 +5097,7 @@ MonoBehaviour:
   oppnentAvatarT: {fileID: 923791176}
   opponentName: {fileID: 1813757102}
   oppnentNameT: {fileID: 1333909872}
+  opponentMmr: {fileID: 196007602}
   ownerScore: {fileID: 1930149029}
   opponentScore: {fileID: 1962006233}
   textAlert: {fileID: 866690815}

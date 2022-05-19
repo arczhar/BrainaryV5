@@ -46,6 +46,8 @@ public class UIMenu : MonoBehaviour
     public GameObject postTestScoreTxt;
     public GameObject SurveyPanel;
     public GameObject feedBackPanel;
+    public GameObject status;
+    public GameObject finding;
 
 
     public GameObject soundOffIcon;
@@ -59,6 +61,7 @@ public class UIMenu : MonoBehaviour
 
     void Awake()
     {
+        panelHowToPlay.SetActive(false);
         showPostTest();
         
         if (GlobalVariable.PostTestScore == 0)
@@ -76,9 +79,10 @@ public class UIMenu : MonoBehaviour
 
     void Start()
     {
+
         showPostTest();
         SurveyFetch();
-       // showPanelPreTest();
+        //showPanelPreTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
@@ -86,6 +90,7 @@ public class UIMenu : MonoBehaviour
         } 
         OnPopupAvatarCallback(true);
         NetworkIO.Auth();
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         FetchStats();
         FetchScore();
 
@@ -95,14 +100,15 @@ public class UIMenu : MonoBehaviour
     
     void showPostTest()
     {
+
         if(GlobalVariable.PostTestScore == 0)
         {
-            if (GlobalVariable.TotalScore > 500)
+            if (GlobalVariable.TotalScore > 1500)
             {
                 congratsTxt.SetActive(true);
                 panelPostTest.SetActive(true);
             }
-            else if (GlobalVariable.TotalWar == 2)
+            else if (GlobalVariable.TotalWar == 1)
             {
                 reachedTxt.SetActive(true);
                 panelPostTest.SetActive(true);
