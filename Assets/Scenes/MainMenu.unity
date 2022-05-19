@@ -34066,5 +34066,10 @@ PrefabInstance:
       propertyPath: ServerOptions.GameId
       value: brainary-qabgdhcame6mm4bbwzjs2w
       objectReference: {fileID: 0}
+    - target: {fileID: 8182431806959645898, guid: 8012d5fd69ceaad48800354af0e255b3,
+        type: 3}
+      propertyPath: ServerOptions.RoomClass
+      value: Brainary
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8012d5fd69ceaad48800354af0e255b3, type: 3}
