@@ -79,10 +79,10 @@ public class UIMenu : MonoBehaviour
 
     void Start()
     {
-
-        showPostTest();
+        //Uncomment this
+        //showPostTest();
         SurveyFetch();
-        showPanelPreTest();
+        //showPanelPreTest();
         if (string.IsNullOrEmpty(GlobalVariable.AvatarName))
         {
             Popup.Show("UI", "PopupAvatar", PopupButton.Yes, OnPopupAvatarCallback);
@@ -91,9 +91,11 @@ public class UIMenu : MonoBehaviour
         OnPopupAvatarCallback(true);
         NetworkIO.Auth();
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+        /* Uncomment this
         FetchStats();
         FetchScore();
-
+        */
       
 
     }

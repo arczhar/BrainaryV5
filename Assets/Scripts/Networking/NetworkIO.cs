@@ -80,7 +80,7 @@ public class NetworkIO : Singleton<NetworkIO>
 
                     Client.Multiplayer.GameServerEndpointFilter = GameServerEndpointFilterDelegate;
 #else
-                    Client.Multiplayer.DevelopmentServer = new ServerEndpoint("192.168.0.14", 8184);
+                    Client.Multiplayer.DevelopmentServer = new ServerEndpoint("localhost", 8184);
 #endif
 
                 },
@@ -128,7 +128,8 @@ public class NetworkIO : Singleton<NetworkIO>
             {
                 //JOIN DATA
                 { "avatar:name", GlobalVariable.AvatarName},
-                { "avatar:icon", GlobalVariable.AvatarID.ToString()}
+                { "avatar:icon", GlobalVariable.AvatarID.ToString()},
+                { "avatar:mmr",  GlobalVariable.TotalScore.ToString() } //<-- You forget to add this
             },
             delegate (Connection connection) {
                 if (Callback != null)
@@ -142,6 +143,7 @@ public class NetworkIO : Singleton<NetworkIO>
 
     void CreateRoom(Client client, bool _visible)
     {
+        Debug.Log(GlobalVariable.TotalScore.ToString());
         string UniqueRoom = string.Format("Brainary#{0}", Utils.GenerateKey(8));
         client.Multiplayer.CreateJoinRoom(
             UniqueRoom,
@@ -161,7 +163,7 @@ public class NetworkIO : Singleton<NetworkIO>
                 //JOIN DATA
                 { "avatar:name", GlobalVariable.AvatarName},
                 { "avatar:icon", GlobalVariable.AvatarID.ToString()},
-                {"avatar:mmr",GlobalVariable.TotalScore.ToString() }
+                { "avatar:mmr",  GlobalVariable.TotalScore.ToString() }
             },
             delegate (Connection connection) {
                 if (Callback != null)
@@ -212,9 +214,16 @@ public class NetworkIO : Singleton<NetworkIO>
                         GameManager.Instance.Add(ServerOptions.Quiz.Questions[n]);
                     }
 
+                    //Your code wrong index
+                    //m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(4) : m.GetString(2),
+                    //m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(3),
+                    //m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(7) : m.GetString(4)
+
+
+                    //Fix
                     UIGame.Instance.SetOpponentData(
-                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(4) : m.GetString(2),
-                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(3),
+                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(5) : m.GetString(2),
+                            m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(6) : m.GetString(3),
                             m.GetString(1).Equals(GlobalVariable.UserID) ? m.GetString(7) : m.GetString(4)
                         );
                     break;
